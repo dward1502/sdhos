@@ -1,0 +1,54 @@
+
+#connect{
+    text-align: right;
+    margin-right: 20%;
+    
+}
+#contactBox{
+    width: 500px;
+    height: 500px;
+    background-color: tan;
+    border: 4px thin darkslategrey;
+}
+.content{
+    /* height: 800px;
+    width: 1400px; */
+    height: 100%;
+    width: 80%;
+    background-color: tan;
+    border: thin solid blue;
+    margin: 20px 20px 20px 60px;  
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+.side-content{
+    
+    width: 10%;    
+}
+.service-title{
+    margin: 40px 0px 40px 100px;
+    font-weight: 600;
+}
+.service{
+    margin: 100px 0px 200px 0px;
+}
+.page{
+    min-height: 100%;
+    margin-bottom: -100px;
+}
+.page:after{
+    content: "";
+    display: block;
+}
+.page-footer, .page:after{
+    height: 100px;
+}
+.page-footer{
+    background-color: black;    
+}
+.copyright{
+     text-align: center;
+     font-size: 10px;
+     margin-top: 10px;
+     color: gray;
+}
