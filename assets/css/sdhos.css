@@ -1,0 +1,16 @@
+#connect{
+    text-align: right;
+    margin-right: 20%;
+    
+}
+#copyright{
+    text-align: center;
+    font-size: 10px;
+    margin-top: 10px;
+}
+#contactBox{
+    width: 500px;
+    height: 500px;
+    background-color: tan;
+    border: 4px thin darkslategrey;
+}
