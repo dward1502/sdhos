@@ -1,54 +1,44 @@
+h2 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    color: #3B4E4C;
+}
 
-#connect{
-    text-align: right;
-    margin-right: 20%;
-    
+h2 span {
+    background-color: #fff;
+    padding: 0 10px;
+    color: #3B4E4C;
 }
-#contactBox{
-    width: 500px;
-    height: 500px;
-    background-color: tan;
-    border: 4px thin darkslategrey;
+p{
+    margin-left: 2%;
+    font-size: 20px;
+    color: #A27035;
 }
-.content{
-    /* height: 800px;
-    width: 1400px; */
-    height: 100%;
-    width: 80%;
-    background-color: tan;
-    border: thin solid blue;
-    margin: 20px 20px 20px 60px;  
-    /* margin-left: auto;
-    margin-right: auto; */
+.navBtn{
+    width: 25%;
+    height: 20%;
+    flex: 1;
 }
-.side-content{
-    
-    width: 10%;    
+.btn{
+   background-color: #3B4E4C;
+   border: none;
+   color: #DCDCDD;
+   font-size: 16px;
+   border-radius:  20px;
 }
-.service-title{
-    margin: 40px 0px 40px 100px;
-    font-weight: 600;
+.cleanPic{
+    border: none;
+    border-radius: 50%;
 }
-.service{
-    margin: 100px 0px 200px 0px;
+.picBtn{
+    margin-bottom: 20px;
 }
-.page{
-    min-height: 100%;
-    margin-bottom: -100px;
-}
-.page:after{
-    content: "";
-    display: block;
-}
-.page-footer, .page:after{
-    height: 100px;
-}
-.page-footer{
-    background-color: black;    
-}
-.copyright{
-     text-align: center;
-     font-size: 10px;
-     margin-top: 10px;
-     color: gray;
+#btnContainer{
+    border-top: solid 3px #3B4E4C;
+    border-bottom: solid 3px #3B4E4C;
+    margin-top: 20px;
+    background-color: #DCDCDD;
 }
