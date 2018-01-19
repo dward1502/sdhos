@@ -10,7 +10,7 @@ function orgRepop(){
     let page = `
    <div id = "infoContainer">
        <div class = "sidePic">
-            <img id = "picture" src = "http://via.placeholder.com/300x500">
+            <img id = "picture" src = "http://via.placeholder.com/450x925">
        </div> 
        <div class = "infoSec">
             <section>
