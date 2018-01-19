@@ -36,6 +36,46 @@ p{
 .picBtn{
     margin-bottom: 20px;
 }
+/* Contact page css */
+#contactTitle{
+    margin-top: 10%;
+    
+}
+form{
+    border: solid 5px grey;
+    margin-left: 24%;
+    margin-top: 5%;
+    width: 50%;
+}
+.formInput{
+    margin-left: 25%;
+    margin-top: 2%;
+}
+#submit{
+    margin: 5% 0% 5% 45%;
+}
+#name{
+    margin-top: 5%;
+}
+/*Organizing page CSS*/
+#infoContainer{
+    display:flex;
+    clear: both;
+}
+.sidePic{
+    float: right;
+    width: 40%
+}
+.infoSec{
+    float: left;
+    width: 60%;
+    
+}
+
+
+
+
+
 #btnContainer{
     border-top: solid 3px #3B4E4C;
     border-bottom: solid 3px #3B4E4C;
