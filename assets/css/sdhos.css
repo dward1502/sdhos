@@ -74,6 +74,7 @@ form{
 /*Organizing/Cleaning page CSS*/
 #infoContainer{
     display:flex;
+    flex-direction: row-reverse;
     clear: both;
 }
 .pictureBlock {
@@ -86,7 +87,7 @@ form{
     background-size: cover;
 }
 .sidePic{
-    float: left; 
+     
     height: 100%;
     width: 40%
 }

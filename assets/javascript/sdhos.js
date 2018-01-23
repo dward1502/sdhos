@@ -48,20 +48,20 @@ input ={
     },
     //Objects for cleaning page
     special: { title: "Special Clean",
-        p1Title: "",
-        p1: "",
-        p2Title: "",
-        p2: "",
-        p3Title: "",
-        p3: "",
+        p1Title: "Have you had to clean up after your special event before?",
+        p1: "For those who have done this before, they know how exhausting it can be. Special events tend to produce a very special kind of mess. Dont worry just hire our cleaning company to clean up after your next party and we will take care of the mess.",
+        p2Title: "Want to make a great impression?",
+        p2: "If you're hosting people who you'd like to make a great impression on such as coworkers or in laws. In that case, San Diego Housekeeping and Organzing Solutions can be your cleaning crew to simply clean and maintain your party.",
+        p3Title: "We have the perfect plan for you.",
+        p3: "We can transform your party mess into the beautiful residence it was before the party. Our services include cleaning of the tables and food prep areas, garbage removal, vacuum and mop floors, wash dishes and more ",
     },
     regular: { title: "Regular ",
-        p1Title: "",
-        p1: "",
-        p2Title: "",
-        p2: "",
-        p3Title: "",
-        p3: "",
+        p1Title: "We are perfect for your needs.",
+        p1: "When you live in San Diego, you live in a vacation town. Don't waste your time at home cleaning up. Go out and enjoy life. Leave your house in good hands. We will make it sparkle.",
+        p2Title: "Professional Cleaning",
+        p2: " We offer a trusted and equipped team near you. We will clean based on your needs.",
+        p3Title: "Customized cleaning",
+        p3: "W work with custom checklists, where you tell us what needs to be cleaned. We will carefully detail-clean your kitchen, bathrooms, living areas, and sleeping areas.",
     },
     occasional: { title: "Occasional",
         p1Title: "",
@@ -72,18 +72,18 @@ input ={
         p3: "",
     },
     moveCle: { title: "Move-In Move-Out",
-        p1Title: "",
-        p1: "",
-        p2Title: "",
-        p2: "",
-        p3Title: "",
-        p3: "",
+        p1Title: "Are you excited for your move?",
+        p1: "Let us take care of the exhausting part of this job. We're the experts who will remove the burden of pre and post move cleaning from your to-do list. Our team is trained and equipped for that. ",
+        p2Title: "Do you want a fresh start?",
+        p2: " Let us make sure that everything is sparkling clean. Cleaning includes: Dust(everything), kitchen appliances, clean cabinets, sinks and countertops. Scrub toilets, shower and bathtubs. Wipe down baseboards, vacuum and sweep all floors. ",
+        p3Title: "Move Out doesn't have to be a pain.",
+        p3: "Cleaning includes: Dust(everything), kitchen appliances, clean cabinets, sinks and countertops. Scrub toilets, shower and bathtubs. Wipe down baseboards, vacuum and sweep all floors.",
     },
     deep: { title: "Deep Clean",
-        p1Title: "",
-        p1: "",
-        p2Title: "",
-        p2: "",
+        p1Title: "The gnitty gritty.",
+        p1: "The deep clean service option is a comprehensive top-to-bottom cleaning of your home. A deep clean includes all the services of a regular clean but with more attention to detailed areas. You may have forgotten to clean up over time. ",
+        p2Title: "We are the best choice for this job.",
+        p2: "Deep Cleaning includes: dusting and washing of all reachable surfaces, wiping the outside of kitchen appliances & cabinets. Basic cleaning of the bathrooms, and vacuuming and mopping of all the floors. We also tailor cleanings to what you want to get cleaned.",
         p3Title: "",
         p3: "",
     },
@@ -129,7 +129,7 @@ function orgRepop(title){
         <section class="text">
             <h1 class="textTitle"><span>${title}</span></h1>
             <div class="oneSec">
-                <h4 class="onePTitle"> 1 st Paragraph title </h2>
+                <h4 class="onePTitle">${p1Title} </h2>
                     <p class="onePara"> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
                         rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
                         explicabo. </p>
@@ -159,7 +159,7 @@ function orgRepop(title){
 
 
 //Repopulate Cleaning services page
-function cleanRepop(title){
+function cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree){
 
     let page = `
    <section id="infoContainer">
@@ -172,22 +172,16 @@ function cleanRepop(title){
         <section class="text">
             <h1 class="textTitle"><span >${title}</span></h1>
             <div class="oneSec">
-                <h4 class="onePTitle"> 1 st Paragraph title </h2>
-                    <p class="onePara"> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                        rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                        explicabo. </p>
+                <h4 class="onePTitle">${p1Tit} </h2>
+                    <p class="onePara">${pOne}</p>
             </div>
             <div class="twoSec">
-                <h4 class="twoPTitle"> 2 nd paragraph title </h2>
-                    <p class="twoPara"> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                        rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                        explicabo.</p>
+                <h4 class="twoPTitle"> ${p2Tit} </h2>
+                    <p class="twoPara"> ${pTwo}</p>
             </div>
             <div class="threeSec">
-                <h4 class="threePTitle"> 3 rd paragraph title </h2>
-                    <p class="threePara"> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                        rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                        explicabo. </p>
+                <h4 class="threePTitle">${p3Tit}</h2>
+                    <p class="threePara">${pThree} </p>
             </div>
               <button class="btn contactBtn" href="contact.html"> Contact Me </button>
 
@@ -203,6 +197,13 @@ function cleanRepop(title){
 //Organizing Images button clicks
 $(".closetOrg").on("click", function () {
     var title = input.closet.title;
+    var title = input.regular.title;
+    var p1Tit = input.regular.p1Title;
+    var pOne = input.regular.p1;
+    var p2Tit = input.regular.p2Title;
+    var pTwo = input.regular.p2;
+    var p3Tit = input.regular.p3Title;
+    var pThree = input.regular.p3;
     console.log(title);
     $("#orgCont").empty();
     $("#btnContainer").show();
@@ -212,6 +213,13 @@ $(".closetOrg").on("click", function () {
 });
 $(".inOutOrg").on("click", function () {
     var title = input.moveOrg.title;
+    var title = input.regular.title;
+    var p1Tit = input.regular.p1Title;
+    var pOne = input.regular.p1;
+    var p2Tit = input.regular.p2Title;
+    var pTwo = input.regular.p2;
+    var p3Tit = input.regular.p3Title;
+    var pThree = input.regular.p3;
 
     $("#orgCont").empty();
     $("#btnContainer").show();
@@ -221,6 +229,13 @@ $(".inOutOrg").on("click", function () {
 });
 $(".document").on("click", function () {
     var title = input.doc.title;
+    var title = input.regular.title;
+    var p1Tit = input.regular.p1Title;
+    var pOne = input.regular.p1;
+    var p2Tit = input.regular.p2Title;
+    var pTwo = input.regular.p2;
+    var p3Tit = input.regular.p3Title;
+    var pThree = input.regular.p3;
 
     $("#orgCont").empty();
     $("#btnContainer").show();
@@ -230,6 +245,13 @@ $(".document").on("click", function () {
 });
 $(".train").on("click", function () {
     var title = input.train.title;
+    var title = input.regular.title;
+    var p1Tit = input.regular.p1Title;
+    var pOne = input.regular.p1;
+    var p2Tit = input.regular.p2Title;
+    var pTwo = input.regular.p2;
+    var p3Tit = input.regular.p3Title;
+    var pThree = input.regular.p3;
 
     $("#orgCont").empty();
     $("#btnContainer").show();
@@ -239,6 +261,13 @@ $(".train").on("click", function () {
 });
 $(".garage").on("click", function () {
     var title = input.garage.title;
+    var title = input.regular.title;
+    var p1Tit = input.regular.p1Title;
+    var pOne = input.regular.p1;
+    var p2Tit = input.regular.p2Title;
+    var pTwo = input.regular.p2;
+    var p3Tit = input.regular.p3Title;
+    var pThree = input.regular.p3;
 
     $("#orgCont").empty();
     $("#btnContainer").show();
@@ -248,6 +277,13 @@ $(".garage").on("click", function () {
 });
 $(".kitchenOrg").on("click", function () {
     var title = input.kitchen.title;
+    var title = input.regular.title;
+    var p1Tit = input.regular.p1Title;
+    var pOne = input.regular.p1;
+    var p2Tit = input.regular.p2Title;
+    var pTwo = input.regular.p2;
+    var p3Tit = input.regular.p3Title;
+    var pThree = input.regular.p3;
 
     $("#orgCont").empty();
     $("#btnContainer").show();
@@ -258,6 +294,13 @@ $(".kitchenOrg").on("click", function () {
 // Cleaning Images button clicks
 $(".specClean").on("click", function () {
     var title = input.special.title;
+    var title = input.regular.title;
+    var p1Tit = input.regular.p1Title;
+    var pOne = input.regular.p1;
+    var p2Tit = input.regular.p2Title;
+    var pTwo = input.regular.p2;
+    var p3Tit = input.regular.p3Title;
+    var pThree = input.regular.p3;
     $("#cleanCont").empty();
     $("#btnContainer").show();
     $(".specClean").hide();
@@ -266,14 +309,27 @@ $(".specClean").on("click", function () {
 });
 $(".regClean").on("click", function () {
     var title = input.regular.title;
+    var p1Tit = input.regular.p1Title;
+    var pOne =  input.regular.p1;
+    var p2Tit= input.regular.p2Title;
+    var pTwo = input.regular.p2;
+    var p3Tit= input.regular.p3Title;
+    var pThree= input.regular.p3;
     $("#cleanCont").empty();
     $("#btnContainer").show();
     $(".regClean").hide();
     console.log("Working");
-    cleanRepop(title);
+    cleanRepop(title,p1Tit,pOne,p2Tit,pTwo,p3Tit,pThree);
 });
 $(".occServ").on("click", function () {
     var title = input.occasional.title;
+    var title = input.regular.title;
+    var p1Tit = input.regular.p1Title;
+    var pOne = input.regular.p1;
+    var p2Tit = input.regular.p2Title;
+    var pTwo = input.regular.p2;
+    var p3Tit = input.regular.p3Title;
+    var pThree = input.regular.p3;
     $("#cleanCont").empty();
     $("#btnContainer").show();
     $(".occServ").hide();
@@ -281,7 +337,14 @@ $(".occServ").on("click", function () {
     cleanRepop(title);
 });
 $(".consClean").on("click", function () {
-    var title = input.moveCle.title;
+    var title = input.constr.title;
+    var title = input.regular.title;
+    var p1Tit = input.regular.p1Title;
+    var pOne = input.regular.p1;
+    var p2Tit = input.regular.p2Title;
+    var pTwo = input.regular.p2;
+    var p3Tit = input.regular.p3Title;
+    var pThree = input.regular.p3;
     $("#cleanCont").empty();
     $("#btnContainer").show();
     $(".consClean").hide();
@@ -289,7 +352,14 @@ $(".consClean").on("click", function () {
     cleanRepop(title);
 });
 $(".inOutClean").on("click", function () {
-    var title = input.deep.title;
+    var title = input.moveCle.title;
+    var title = input.regular.title;
+    var p1Tit = input.regular.p1Title;
+    var pOne = input.regular.p1;
+    var p2Tit = input.regular.p2Title;
+    var pTwo = input.regular.p2;
+    var p3Tit = input.regular.p3Title;
+    var pThree = input.regular.p3;
     $("#cleanCont").empty();
     $("#btnContainer").show();
     $(".inOutClean").hide();
@@ -297,7 +367,14 @@ $(".inOutClean").on("click", function () {
     cleanRepop(title);
 });
 $(".deepClean").on("click", function () {
-    var title = input.vaca.title;
+    var title = input.deep.title;
+    var title = input.regular.title;
+    var p1Tit = input.regular.p1Title;
+    var pOne = input.regular.p1;
+    var p2Tit = input.regular.p2Title;
+    var pTwo = input.regular.p2;
+    var p3Tit = input.regular.p3Title;
+    var pThree = input.regular.p3;
     $("#cleanCont").empty();
     $("#btnContainer").show();
     $(".deepClean").hide();
@@ -305,7 +382,14 @@ $(".deepClean").on("click", function () {
     cleanRepop(title);
 });
 $(".vacClean").on("click", function () {
-    var title = input.green.title;
+    var title = input.vaca.title;
+    var title = input.regular.title;
+    var p1Tit = input.regular.p1Title;
+    var pOne = input.regular.p1;
+    var p2Tit = input.regular.p2Title;
+    var pTwo = input.regular.p2;
+    var p3Tit = input.regular.p3Title;
+    var pThree = input.regular.p3;
     $("#cleanCont").empty();
     $("#btnContainer").show();
     $(".vacClean").hide();
@@ -313,7 +397,14 @@ $(".vacClean").on("click", function () {
     cleanRepop(title);
 });
 $(".greenClean").on("click", function () {
-    var title = input.constr.title;
+    var title = input.green.title;
+    var title = input.regular.title;
+    var p1Tit = input.regular.p1Title;
+    var pOne = input.regular.p1;
+    var p2Tit = input.regular.p2Title;
+    var pTwo = input.regular.p2;
+    var p3Tit = input.regular.p3Title;
+    var pThree = input.regular.p3;
     $("#cleanCont").empty();
     $("#btnContainer").show();
     $(".greenClean").hide();
