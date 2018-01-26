@@ -2,6 +2,18 @@ $(document).ready(function(){
     $("#btnContainer").hide();
 
 });
+//Hamburger jquery toggle action
+$('#nav-toggle').on('click', function () {
+    this.classList.toggle('active');
+});
+//toggle nav ul
+$('#nav-toggle').click(function () {
+    $('nav ul').toggle();
+});
+
+
+
+
 //Object for data to be inputted into organizing and cleaning page
 input ={
     closet : { title: "Closet" , 
