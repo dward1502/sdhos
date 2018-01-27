@@ -10,6 +10,28 @@ $('#nav-toggle').on('click', function () {
 $('#nav-toggle').click(function () {
     $('nav ul').toggle();
 });
+//Nav opaque animation from window scroll
+$(window).scroll(function () {
+    // 100 = The point you would like to fade the nav in.
+
+    if ($(window).scrollTop() > 100) {
+
+        $('.bg').addClass('show');
+
+    } else {
+
+        $('.bg').removeClass('show');
+
+    };
+});
+
+$('.scroll').on('click', function (e) {
+    e.preventDefault()
+
+    $('html, body').animate({
+        scrollTop: $(this.hash).offset().top
+    }, 1500);
+});
 
 
 
@@ -115,15 +137,6 @@ input ={
         p3Title: "",
         p3: "",
     },
-    constr: { title: "Construction Clean",
-        p1Title: "",
-        p1: "",
-        p2Title: "",
-        p2: "",
-        p3Title: "",
-        p3: "",
-    },
-
 }
 
 
@@ -340,20 +353,7 @@ $(".occServ").on("click", function () {
     console.log("Working");
     cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
 });
-$(".consClean").on("click", function () {
-    var title = input.constr.title;
-    var p1Tit = input.constr.p1Title;
-    var pOne = input.constr.p1;
-    var p2Tit = input.constr.p2Title;
-    var pTwo = input.constr.p2;
-    var p3Tit = input.constr.p3Title;
-    var pThree = input.constr.p3;
-    $("#cleanCont").empty();
-    $("#btnContainer").show();
-    $(".consClean").hide();
-    console.log("Working");
-    cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
-});
+
 $(".inOutClean").on("click", function () {
     var title = input.moveCle.title;
     var p1Tit = input.moveCle.p1Title;
