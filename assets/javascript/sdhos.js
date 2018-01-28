@@ -10,28 +10,25 @@ $('#nav-toggle').on('click', function () {
 $('#nav-toggle').click(function () {
     $('nav ul').toggle();
 });
-//Nav opaque animation from window scroll
-$(window).scroll(function () {
-    // 100 = The point you would like to fade the nav in.
 
-    if ($(window).scrollTop() > 100) {
+//Nav animation from window scroll and resize
+$(document).on("scroll", function () {
 
-        $('.bg').addClass('show');
-
+    if ($(document).scrollTop() > 100) {
+        $("header").removeClass("large").addClass("small");
+        $("a").css({ "margin": "0px", "line-height" : "30px"});
     } else {
+        $("header").removeClass("small").addClass("large");
+        $("a").css({"margin": "15px", "line-height": "70px"})
+    }
 
-        $('.bg').removeClass('show');
-
-    };
 });
-
-$('.scroll').on('click', function (e) {
-    e.preventDefault()
-
-    $('html, body').animate({
-        scrollTop: $(this.hash).offset().top
-    }, 1500);
-});
+//scroll to top function on button click
+var scrollTop = function(){
+    $(function () {
+        $('html').scrollTop(0);
+    });
+}
 
 
 
@@ -141,7 +138,7 @@ input ={
 
 
 //Repopulate Organizing services page
-function orgRepop(title){
+function orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree) {
 
     let page = `
    <section id="infoContainer">
@@ -154,22 +151,16 @@ function orgRepop(title){
         <section class="text">
             <h1 class="textTitle"><span>${title}</span></h1>
             <div class="oneSec">
-                <h4 class="onePTitle">${p1Title} </h2>
-                    <p class="onePara"> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                        rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                        explicabo. </p>
+                <h4 class="onePTitle">${p1Tit} </h2>
+                    <p class="onePara"> ${pOne} </p>
             </div>
             <div class="twoSec">
-                <h4 class="twoPTitle"> 2 nd paragraph title </h2>
-                    <p class="twoPara"> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                        rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                        explicabo.</p>
+                <h4 class="twoPTitle">${p2Tit} </h2>
+                    <p class="twoPara"> ${pTwo}</p>
             </div>
             <div class="threeSec">
-                <h4 class="threePTitle"> 3 rd paragraph title </h2>
-                    <p class="threePara"> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                        rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                        explicabo. </p>
+                <h4 class="threePTitle">${p3Tit} </h2>
+                    <p class="threePara">${pThree} </p>
             </div>
               <button class="btn contactBtn" href="contact.html"> Contact Me </button>
 
@@ -208,7 +199,7 @@ function cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree){
                 <h4 class="threePTitle">${p3Tit}</h2>
                     <p class="threePara">${pThree} </p>
             </div>
-              <button class="btn contactBtn" href="contact.html"> Contact Me </button>
+              <button class="btn contactBtn" onclick="window.location.href='contact.html'"> Contact Me </button>
 
         </section>
     </div>
@@ -232,7 +223,7 @@ $(".closetOrg").on("click", function () {
     $("#orgCont").empty();
     $("#btnContainer").show();
     $(".closetOrg").hide();
-    console.log("Working");
+    scrollTop();
     orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
 });
 $(".inOutOrg").on("click", function () {
@@ -247,7 +238,7 @@ $(".inOutOrg").on("click", function () {
     $("#orgCont").empty();
     $("#btnContainer").show();
     $(".inOutOrg").hide();
-    console.log("Working");
+    scrollTop();
     orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
 });
 $(".document").on("click", function () {
@@ -262,7 +253,7 @@ $(".document").on("click", function () {
     $("#orgCont").empty();
     $("#btnContainer").show();
     $(".document").hide();
-    console.log("Working");
+    scrollTop();
     orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
 });
 $(".train").on("click", function () {
@@ -277,7 +268,7 @@ $(".train").on("click", function () {
     $("#orgCont").empty();
     $("#btnContainer").show();
     $(".train").hide();
-    console.log("Working");
+    scrollTop();
     orgRepop(tititle, p1Tit, pOne, p2Tit, pTwo, p3Tit,pThreetle);
 });
 $(".garage").on("click", function () {
@@ -292,7 +283,7 @@ $(".garage").on("click", function () {
     $("#orgCont").empty();
     $("#btnContainer").show();
     $(".garage").hide();
-    console.log("Working");
+    scrollTop();
     orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
 });
 $(".kitchenOrg").on("click", function () {
@@ -307,7 +298,7 @@ $(".kitchenOrg").on("click", function () {
     $("#orgCont").empty();
     $("#btnContainer").show();
     $(".kitchenOrg").hide();
-    console.log("Working");
+    scrollTop();
     orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
 });
 // Cleaning Images button clicks
@@ -322,7 +313,7 @@ $(".specClean").on("click", function () {
     $("#cleanCont").empty();
     $("#btnContainer").show();
     $(".specClean").hide();
-    console.log("Working");
+    scrollTop();    
     cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
 });
 $(".regClean").on("click", function () {
@@ -336,7 +327,7 @@ $(".regClean").on("click", function () {
     $("#cleanCont").empty();
     $("#btnContainer").show();
     $(".regClean").hide();
-    console.log("Working");
+    scrollTop();
     cleanRepop(title,p1Tit,pOne,p2Tit,pTwo,p3Tit,pThree);
 });
 $(".occServ").on("click", function () {
@@ -350,7 +341,7 @@ $(".occServ").on("click", function () {
     $("#cleanCont").empty();
     $("#btnContainer").show();
     $(".occServ").hide();
-    console.log("Working");
+    scrollTop();
     cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
 });
 
@@ -365,7 +356,7 @@ $(".inOutClean").on("click", function () {
     $("#cleanCont").empty();
     $("#btnContainer").show();
     $(".inOutClean").hide();
-    console.log("Working");
+    scrollTop();
     cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
 });
 $(".deepClean").on("click", function () {
@@ -379,7 +370,7 @@ $(".deepClean").on("click", function () {
     $("#cleanCont").empty();
     $("#btnContainer").show();
     $(".deepClean").hide();
-    console.log("Working");
+    scrollTop();
     cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
 });
 $(".vacClean").on("click", function () {
@@ -393,7 +384,7 @@ $(".vacClean").on("click", function () {
     $("#cleanCont").empty();
     $("#btnContainer").show();
     $(".vacClean").hide();
-    console.log("Working");
+    scrollTop();
     cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
 });
 $(".greenClean").on("click", function () {
@@ -407,6 +398,6 @@ $(".greenClean").on("click", function () {
     $("#cleanCont").empty();
     $("#btnContainer").show();
     $(".greenClean").hide();
-    console.log("Working");
+    scrollTop();
     cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
 });

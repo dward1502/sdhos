@@ -25,18 +25,43 @@ p{
     margin-left: 15%;
 }
 .picBtn{
-    margin-bottom: 20px;
+    margin-bottom: 20px;   
+}
+.picTitle{
+    margin-left: 30%;
+}
+.picTitleLon{
+    margin-left: 20%;
+}
+.picTitleOrg{
+    margin-left: 32%;
 }
 .btnSelection{
     margin: 5%;
     border: solid 4px black;
     padding: 3%;
 }
+.frontPage{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.frontTitle{
+    margin-left: 36%;
+    font-size: 46px;
+}
+.jumbotron{
+    margin-top: 5%;
+}
 
 
 /* Contact page css */
+.contactPage{
+    margin-top: 10%;
+    margin-bottom: 8%;
+}
 #contactTitle{
-    margin-top: 10%;    
+    margin-top: 10%;
+    margin-bottom: 8%;    
 }
 h2 {
     width: 100%;
@@ -77,7 +102,7 @@ form{
 }
 
 /*Organizing/Cleaning page CSS*/
-#cleanCont{
+#cleanCont, #orgCont{
     margin-top: 5%;
 }
 #cleanTitle, #orgTitle{
@@ -164,11 +189,14 @@ h4{
 #connect{
     justify-content: flex-end;
 }
-
-
 .navigation {
-    height: 100px;
     background: #262626;
+    opacity: .7;
+}
+.navigation, .nav-container{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .brand {
@@ -187,7 +215,7 @@ h4{
 
 .nav-container {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto;    
 }
 
 nav {
@@ -242,6 +270,7 @@ nav ul li ul li a {
     background: #262626;
     height: 70px;
     width: 70px;
+    margin: 15px;
 }
 
 @media only screen and (max-width: 798px) {
@@ -250,7 +279,7 @@ nav ul li ul li a {
     }
     nav {
         width: 100%;
-        padding: 70px 0 15px;
+        padding: 95px 0 15px;
     }
     nav ul {
         display: none;
@@ -261,9 +290,18 @@ nav ul li ul li a {
     nav ul li a {
         padding: 15px;
         line-height: 20px;
+        margin-top: 0px;
     }
     nav ul li ul li a {
         padding-left: 30px;
+    }
+    .logo{
+        height: 90px;
+    }
+    .brand{
+        margin: 0px;
+        position: absolute;
+        padding-left: 40px;
     }
 }
 
@@ -272,7 +310,6 @@ nav ul li ul li a {
         display: block !important;
     }
 }
-
 #nav-toggle {
     position: absolute;
     left: 18px;
@@ -280,7 +317,6 @@ nav ul li ul li a {
     cursor: pointer;
     padding: 10px 35px 16px 0px;
 }
-
 #nav-toggle span,
 #nav-toggle span:before,
 #nav-toggle span:after {
@@ -319,4 +355,21 @@ nav ul li ul li a {
 #nav-toggle.active span:after {
     transform: rotate(-45deg);
 }
+header{
+    transition: .7s all;
+    -moz-transition: .7s all;
+    -webkit-transition: .7s all;
+    -o-transition: .7s all;
+}
+header.small {
+    height: 50px;
+}
+header.large {
+    height: 120px;
+}
 
+@media screen and (min-width: 804px), (max-width: 1180px){
+    .brand{
+        margin-left: 5%;
+    }
+}
