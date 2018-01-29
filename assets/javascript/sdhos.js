@@ -9,14 +9,16 @@ $('#nav-toggle').on('click', function () {
 //toggle nav ul
 $('#nav-toggle').click(function () {
     $('nav ul').toggle();
+    $("nav ul li a").css({"background": "black"})
 });
 
 //Nav animation from window scroll and resize
 $(document).on("scroll", function () {
 
-    if ($(document).scrollTop() > 100) {
+    if ($(document).scrollTop() >= 100) {
         $("header").removeClass("large").addClass("small");
-        $("a").css({ "margin": "0px", "line-height" : "30px"});
+        $("a").css({ "margin-top": "2px", "line-height": "30px" });
+        
     } else {
         $("header").removeClass("small").addClass("large");
         $("a").css({"margin": "15px", "line-height": "70px"})
@@ -26,7 +28,8 @@ $(document).on("scroll", function () {
 //scroll to top function on button click
 var scrollTop = function(){
     $(function () {
-        $('html').scrollTop(0);
+      //  $('html').scrollTop(0);
+      $('html,body').animate({ scrollTop: 0 }, 'slow');
     });
 }
 
@@ -35,47 +38,52 @@ var scrollTop = function(){
 
 //Object for data to be inputted into organizing and cleaning page
 input ={
-    closet : { title: "Closet" , 
-               p1Title:"", p1:"", p2Title:"", p2:"", p3Title:"", p3:""},
+    closet : {  title: "Closet" , 
+                p1Title:"Do you need more closet space for you clothes?", 
+                p1:"You can spend precious time looking for things or you can find a place for everything.  You will always know exactly where to look. ", 
+                p2Title:"Typical projects include : ", 
+                p2:"We help you decide what to remove and what to keep, free up space, make everything visible and accessible. Making closets and storage areas functional, creating a warm welcoming space that's a sanctuary.", 
+                p3Title:"", 
+                p3:"Contact us for a consultation. We have the perfect project for you."},
     moveOrg: { title: "Move-In Move-Out",
-        p1Title: "",
-        p1: "",
-        p2Title: "",
-        p2: "",
-        p3Title: "",
-        p3: "",
+                p1Title: "Like any big project, an organized move begins with a plan.",
+                p1: "Make it an easier task by hiring a professional organizer who can help solve problems before they arise and make your moving process less stressful.",
+                p2Title: "Typical projects include :",
+                p2: "Creating a personalized moving checklist and timeline, purchase packing supplies, rent a moving truck and making arrangements to connect utilities.",
+                p3Title: "Need Help?",
+                p3: "Call a professional organizer. When everything is done, go enjoy your new home and neighborhood.",
     },
-    doc: { title: "Document",
-        p1Title: "",
-        p1: "",
-        p2Title: "",
-        p2: "",
-        p3Title: "",
-        p3: "",
+    doc: {      title: "Document",
+                p1Title: "Do you feel overwhelmed by paperwork and documents?",
+                p1: "Many people who work in their homes are so busy serving their clients and customers, they can't find the extra time to review and organize their paperwork. Hiring a professional organizer will save your precious time to focus on what really matter for your job and life.",
+                p2Title: "Typical projects include : ",
+                p2: "Getting control of your paperwork, the desk top, files, bookshelves, photo storage, crafting a personal creative space and improving the work flow of your office.",
+                p3Title: "",
+                p3: "If you need help with paperwork organizing and home document management, please contact us to a consultation.",
     },
-    train: { title: "Train Housekeepers",
-        p1Title: "",
-        p1: "",
-        p2Title: "",
-        p2: "",
-        p3Title: "",
-        p3: "",
+    train: {    title: "Train Housekeepers",
+                p1Title: "",
+                p1: "",
+                p2Title: "",
+                p2: "",
+                p3Title: "",
+                p3: "",
     },
-    garage: { title: "Garage",
-        p1Title: "",
-        p1: "",
-        p2Title: "",
-        p2: "",
-        p3Title: "",
-        p3: "",
+    garage: {   title: "Garage",
+                p1Title: "You plan to organize your garage on the weekend.",
+                p1: "On a sunny Saturday morning, you grab a cup of coffee, open the door with gusto and determined to organize by the end of the day. But you do not know where to begin. You start getting things off and realize that you should be wasting your time with moments of pleasure. A disorganized and cluttered garage not only takes up a lot of physical space but mental space too. Enjoy your life and leave the hard work with us.",
+                p2Title: "Typical projects include : ",
+                p2: " Store and protect your car, help you find and put away your things easier and faster. Free up space, improve the efficiency of home repair/maintenance projects. Sorting through items, gifting and discarding. Developing a storage system that fits your space, storage organizing and marking containers.",
+                p3Title: "",
+                p3: "For more information, please contact us for a consultation.",
     },
-    kitchen: { title: "Kitchen",
-        p1Title: "",
-        p1: "",
-        p2Title: "",
-        p2: "",
-        p3Title: "",
-        p3: "",
+    kitchen: {  title: "Kitchen",
+                p1Title: "",
+                p1: "",
+                p2Title: "",
+                p2: "",
+                p3Title: "",
+                p3: "",
     },
     //Objects for cleaning page
     special: { title: "Special Clean",
