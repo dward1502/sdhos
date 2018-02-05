@@ -9,6 +9,13 @@ p{
     font-weight: 600;
     color: #A27035;
 }
+.social{
+    width: 100%;
+    height: 80px;
+    border-top: solid 4px #000;
+    border-bottom:solid 4px #000;
+    background: #3B4E4C;
+}
 .btn{
    background-color: #3B4E4C;
    border: none;
@@ -23,6 +30,7 @@ p{
     border: none;
     border-radius: 50%;
     margin-left: 15%;
+    z-index: -1;
 }
 .picBtn{
     margin-bottom: 20px;   
@@ -77,17 +85,21 @@ h2 span {
     color: #3B4E4C;
 }
 form{
-    border: solid 5px grey;
-    margin-left: 24%;
+    /* border: solid 5px grey; */
+     margin-left: 10%; 
     margin-top: 5%;
-    width: 50%;
+    width: 75%;
 }
 .formInput{
-    margin-left: 25%;
+    /* margin-left: 25%; */
     margin-top: 2%;
 }
 #name{
     margin-top: 5%;
+}
+#phone{
+    margin-left: 35%;
+    font-size: 36px;
 }
 .sub{
     background-color: #3B4E4C;
@@ -270,19 +282,24 @@ nav ul li ul li a {
     top: 0;
     right: 0;
     background: #262626;
-    height: 70px;
+    height: 65px;
     width: 70px;
-    margin: 15px;
+    margin: 15px 30px 15px 15px;
 }
-
-@media only screen and (max-width: 798px) {
+.navPad {
+    padding: 65px 0px 15px;
+}
+@media only screen and (max-width: 900px) {
     .nav-mobile {
         display: block;
         opacity: inherit;
     }
+    .mobileList{
+        margin: 0px 15px 0px 0px;
+    }
     nav {
         width: 100%;
-        padding: 110px 0 15px;
+        padding: 120px 0 15px;
     }
     nav ul {
         display: none;
@@ -295,6 +312,9 @@ nav ul li ul li a {
         line-height: 20px;
         margin-top: 0px;
         opacity: .7;
+    }
+    a{
+        margin: 0px 15px 0px 15px;
     }
     nav ul li ul li a {
         padding-left: 30px;
@@ -311,10 +331,10 @@ nav ul li ul li a {
     }
 }
 
-@media screen and (min-width: 799px) {
+@media screen and (min-width: 908px) {
     .nav-list {
         display: block !important;
-    }
+    }    
 }
 #nav-toggle {
     position: absolute;
@@ -379,10 +399,34 @@ header.large {
         margin-left: 5%;
         margin-top: 2%;
     }
+    #phone{
+        margin-left: 35%;
+    }
 }
 @media screen and (min-width: 1200px){
     .brand{
         margin-top: 4%;
         margin-left: 0px;
+    }
+}
+@media screen and (max-width: 575px){
+    .cleanPic{
+        margin-left: 20%;
+    }
+    .btnSelection{
+        padding: 30px;
+    }
+    .picTitle{
+        margin-left: 35%;
+    }
+    .picTitleLon{
+        margin-left: 25%;
+    }
+    #phone{
+        margin-left: 20%;
+        margin-bottom: 25%;
+    }
+    .sub{
+        margin-left: 20%;
     }
 }

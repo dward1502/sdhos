@@ -15,16 +15,38 @@ $('#nav-toggle').click(function () {
 //Nav animation from window scroll and resize
 $(document).on("scroll", function () {
 
-    if ($(document).scrollTop() >= 100) {
+    if ($(document).scrollTop() >= 75) {
         $("header").removeClass("large").addClass("small");
-        $("a").css({ "margin-top": "2px", "line-height": "30px" });
+        // $("nav").addClass("navPad");
+        $("navLink").css({"margin-top": "2px","line-height": "45px"});
+        $(".logo").css({"height": "60px"});
+        $(".brand").css({"margin-top": "5px"});
+        $(".nav-mobile").css({"margin": "0px 30px 0px 15px"});
+        $(".mobileList").css({"margin": "0px 15px 0px 0px"});
+        // $("nav").css({"padding": "65px 0px 15px"});
+
+
+
         
     } else {
         $("header").removeClass("small").addClass("large");
-        $("a").css({"margin": "15px", "line-height": "70px"})
+        // $("nav").removeClass("navPad")
+        $("navLink").css({"margin": "15px","line-height": "70px"});
+        $(".logo").css({"height": "120px"});
+        $(".brand").css({"margin-top": "30px"});
+        $(".nav-mobile").css({"margin": "15px 30px 15px 15px"});
+        $(".mobileList").css({"margin": "0px 15px 0px 0px"});
+        // $("nav").css({"padding": "120px 0px 15px"});
+
+
     }
 
 });
+// function navResize(){
+//     if($(document).width() < 900){
+
+//     }
+// }
 //scroll to top function on button click
 var scrollTop = function(){
     $(function () {
@@ -45,7 +67,7 @@ input ={
                 p2:"We help you decide what to remove and what to keep, free up space, make everything visible and accessible. Making closets and storage areas functional, creating a warm welcoming space that's a sanctuary.", 
                 p3Title:"", 
                 p3:"Contact us for a consultation. We have the perfect project for you."},
-    moveOrg: { title: "Move-In Move-Out",
+    moveOrg: { title: "Moving",
                 p1Title: "Like any big project, an organized move begins with a plan.",
                 p1: "Make it an easier task by hiring a professional organizer who can help solve problems before they arise and make your moving process less stressful.",
                 p2Title: "Typical projects include :",
@@ -110,7 +132,7 @@ input ={
         p3Title: "",
         p3: "",
     },
-    moveCle: { title: "Move-In Move-Out",
+    moveCle: { title: "Moving",
         p1Title: "Are you excited for your move?",
         p1: "Let us take care of the exhausting part of this job. We're the experts who will remove the burden of pre and post move cleaning from your to-do list. Our team is trained and equipped for that. ",
         p2Title: "Do you want a fresh start?",
