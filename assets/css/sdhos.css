@@ -217,13 +217,15 @@ h4{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 .brand {
     margin-top: 5%;
-    position: relative;
+    position: absolute;
     padding-left: 20px;
     float: left;
+    z-index: 100;
     /* line-height: 70px; */
 }
 
@@ -458,9 +460,12 @@ header.large {
     font-style: italic;
     color: white;
     font-weight: 700;
+    position: relative;
+    z-index: 5;
 }
 .slideshow-container{
     position: relative;
     margin-top: -130px;
+    z-index: 1;
 
 }
