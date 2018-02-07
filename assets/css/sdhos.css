@@ -32,6 +32,10 @@ p{
      margin-left: 5%; 
     z-index: -1;
 }
+.frontCleanPic{
+    border-radius: 50%;
+    margin-left: 15%;
+}
 .picBtn{
     margin-bottom: 20px;   
 }
@@ -54,7 +58,7 @@ p{
     margin-bottom: 10%;
 }
 .frontTitle{
-    margin-left: 36%;
+    margin-left: 31%;
     font-size: 46px;
 }
 .jumbotron{
@@ -419,6 +423,11 @@ header.large {
     .brand{
         margin-top: 4%;
         margin-left: 0px;
+    }
+}
+@media screen and (max-width: 800px){
+    .frontCleanPic{
+        margin-left: 4%;
     }
 }
 @media screen and (max-width: 575px){
