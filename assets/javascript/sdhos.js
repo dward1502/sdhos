@@ -18,27 +18,22 @@ $(document).on("scroll", function () {
     if ($(document).scrollTop() >= 75) {
         $("header").removeClass("large").addClass("small");
         // $("nav").addClass("navPad");
-        $("navLink").css({"margin-top": "2px","line-height": "45px"});
+        $(".navLink").css({"margin-top": "2px","line-height": "45px"});
         $(".logo").css({"height": "60px"});
         $(".brand").css({"margin-top": "5px"});
         $(".nav-mobile").css({"margin": "0px 30px 0px 15px"});
         $(".mobileList").css({"margin": "0px 15px 0px 0px"});
         // $("nav").css({"padding": "65px 0px 15px"});
-
-
-
         
     } else {
         $("header").removeClass("small").addClass("large");
         // $("nav").removeClass("navPad")
-        $("navLink").css({"margin": "15px","line-height": "70px"});
+        $(".navLink").css({"margin": "15px","line-height": "90px"});
         $(".logo").css({"height": "120px"});
         $(".brand").css({"margin-top": "30px"});
         $(".nav-mobile").css({"margin": "15px 30px 15px 15px"});
         $(".mobileList").css({"margin": "0px 15px 0px 0px"});
         // $("nav").css({"padding": "120px 0px 15px"});
-
-
     }
 
 });
@@ -54,7 +49,23 @@ var scrollTop = function(){
       $('html,body').animate({ scrollTop: 0 }, 'slow');
     });
 }
+//slideshow javascript
+var slideIndex = 0;
+carousel();
 
+function carousel(){
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for(i=0; i<x.length; i++){
+        x[i].style.display = "none";
+    }
+    slideIndex++;
+    if(slideIndex > x.length) {
+        slideIndex = 1; 
+    }
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 4000);
+}
 
 
 

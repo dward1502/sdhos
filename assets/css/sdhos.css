@@ -29,7 +29,7 @@ p{
 .cleanPic{
     border: none;
     border-radius: 50%;
-    margin-left: 15%;
+     margin-left: 5%; 
     z-index: -1;
 }
 .picBtn{
@@ -170,6 +170,9 @@ form{
 }
 h4{
     margin-left: 3%;
+}
+.contactBtn{
+    margin-left: 15%;
 }
 /* Container for buttons in repop of org and clean page */
 #btnContainer{
@@ -329,6 +332,15 @@ nav ul li ul li a {
         position: absolute;
         /* padding-left: 40px; */
     }
+    /* Information page cleaning and organzing */
+    #infoContainer {
+        display: flex;
+        /* flex-direction: row-reverse; */
+        /* clear: both; */
+    }
+    .imageBlock{
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 908px) {
@@ -411,13 +423,13 @@ header.large {
 }
 @media screen and (max-width: 575px){
     .cleanPic{
-        margin-left: 20%;
+        margin-left: 10%;
     }
     .btnSelection{
         padding: 30px;
     }
     .picTitle{
-        margin-left: 35%;
+        margin-left: 33%;
     }
     .picTitleLon{
         margin-left: 25%;
@@ -429,4 +441,17 @@ header.large {
     .sub{
         margin-left: 20%;
     }
+   
+}
+/* slideshow css */
+.text{
+    font-size: 50px;
+    font-style: italic;
+    color: white;
+    font-weight: 700;
+}
+.slideshow-container{
+    position: relative;
+    margin-top: -130px;
+
 }
