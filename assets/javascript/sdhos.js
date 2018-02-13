@@ -50,30 +50,36 @@ var scrollTop = function(){
     });
 }
 //slideshow javascript
+var slidesArray = document.getElementsByClassName("mySlides");
+console.log('slide len ', slidesArray.length);
+
+
 var slideIndex = 0;
+if (slidesArray.length > 0) {
+    carousel();
+} else {
+    console.log("buttons should work");
+}
+//carousel();
 
-// if(slideIndex == 2){
-//     carousel();
-// }else{
-//     console.log("buttons should work");
-// }
 
-// carousel();
+function carousel(){
+    console.log('car called ');
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    console.log("slide len ", x.length);
+    for(i=0; i<x.length; i++){
+        x[i].style.display = "none";
+    }
+    slideIndex++;
+    if(slideIndex > x.length) {
+        slideIndex = 1; 
+    }
 
-// function carousel(){
-//     var i;
-//     var x = document.getElementsByClassName("mySlides");
-//     console.log(x.length);
-//     for(i=0; i<x.length; i++){
-//         x[i].style.display = "none";
-//     }
-//     slideIndex++;
-//     if(slideIndex > x.length) {
-//         slideIndex = 1; 
-//     }
-//     x[slideIndex-1].style.display = "block";
-//     setTimeout(carousel, 4000);
-// }
+    x[slideIndex-1].style.display = "block";
+
+    setTimeout(carousel, 4000);
+}
 
 
 
@@ -212,30 +218,36 @@ function orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree,pic) {
 
     let page = `
    <section id="infoContainer">
+    <div class="row">
+    <div class="col-md-6 col-sm-12 order-md-2">
     <div class="sidePic">
-        <div class="pictureBlock">        
+        <div class="pictureBlock">
             <img class="imageBlock" height="875px"src=${pic}>
         </div>
     </div> 
+    </div>
+    <div class="col-md-6 col-sm-12 order-1-md-6">
     <div class="infoSec">
         <section class="text">
-            <h1 class="textTitle"><span>${title}</span></h1>
+            <h1 class="textTitle"><span >${title}</span></h1>
             <div class="oneSec">
                 <h4 class="onePTitle">${p1Tit} </h2>
-                    <p class="onePara"> ${pOne} </p>
+                    <p class="onePara">${pOne}</p>
             </div>
             <div class="twoSec">
-                <h4 class="twoPTitle">${p2Tit} </h2>
+                <h4 class="twoPTitle"> ${p2Tit} </h2>
                     <p class="twoPara"> ${pTwo}</p>
             </div>
             <div class="threeSec">
-                <h4 class="threePTitle">${p3Tit} </h2>
+                <h4 class="threePTitle">${p3Tit}</h2>
                     <p class="threePara">${pThree} </p>
             </div>
-              <button class="btn contactBtn" href="contact.html"> Contact Me </button>
+              <button class="btn contactBtn" onclick="window.location.href='contact.html'"> Contact Me </button>
 
         </section>
     </div>
+    </div>
+</div>
 </section>
         `
     $("#orgCont").html (page);
@@ -251,14 +263,14 @@ function cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree,pic){
    <section id="infoContainer">
    
 <div class="row">
-    <div class="col-md-6 col-sm-12">    
+    <div class="col-md-6 col-sm-12 order-md-2">    
     <div class="sidePic">
         <div class="pictureBlock">        
             <img class="imageBlock" height="875px"src=${pic}>
         </div>
     </div> 
     </div>
-    <div class="col-md-6 col-sm-12">
+    <div class="col-md-6 col-sm-12 order-1-md-6">
     <div class="infoSec">
         <section class="text">
             <h1 class="textTitle"><span >${title}</span></h1>

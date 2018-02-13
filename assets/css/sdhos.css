@@ -147,11 +147,11 @@ form{
 .sidePic{
      
     height: 100%;
-    width: 50%
+    width: 100%
 }
 .infoSec{
     /* float: left; */
-    width: 50%;    
+    width: 100%;    
 }
 /* InfoSection  */
 .text{
