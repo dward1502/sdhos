@@ -51,21 +51,29 @@ var scrollTop = function(){
 }
 //slideshow javascript
 var slideIndex = 0;
-carousel();
 
-function carousel(){
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for(i=0; i<x.length; i++){
-        x[i].style.display = "none";
-    }
-    slideIndex++;
-    if(slideIndex > x.length) {
-        slideIndex = 1; 
-    }
-    x[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 4000);
-}
+// if(slideIndex == 2){
+//     carousel();
+// }else{
+//     console.log("buttons should work");
+// }
+
+// carousel();
+
+// function carousel(){
+//     var i;
+//     var x = document.getElementsByClassName("mySlides");
+//     console.log(x.length);
+//     for(i=0; i<x.length; i++){
+//         x[i].style.display = "none";
+//     }
+//     slideIndex++;
+//     if(slideIndex > x.length) {
+//         slideIndex = 1; 
+//     }
+//     x[slideIndex-1].style.display = "block";
+//     setTimeout(carousel, 4000);
+// }
 
 
 
@@ -77,7 +85,10 @@ input ={
                 p2Title:"Typical projects include : ", 
                 p2:"We help you decide what to remove and what to keep, free up space, make everything visible and accessible. Making closets and storage areas functional, creating a warm welcoming space that's a sanctuary.", 
                 p3Title:"", 
-                p3:"Contact us for a consultation. We have the perfect project for you."},
+                p3:"Contact us for a consultation. We have the perfect project for you.",
+                photo: "../images/cleanGreen.jpg"
+
+    },
     moveOrg: { title: "Moving",
                 p1Title: "Like any big project, an organized move begins with a plan.",
                 p1: "Make it an easier task by hiring a professional organizer who can help solve problems before they arise and make your moving process less stressful.",
@@ -85,6 +96,8 @@ input ={
                 p2: "Creating a personalized moving checklist and timeline, purchase packing supplies, rent a moving truck and making arrangements to connect utilities.",
                 p3Title: "Need Help?",
                 p3: "Call a professional organizer. When everything is done, go enjoy your new home and neighborhood.",
+                photo: "../images/cleanGreen.jpg"
+
     },
     doc: {      title: "Document",
                 p1Title: "Do you feel overwhelmed by paperwork and documents?",
@@ -93,6 +106,8 @@ input ={
                 p2: "Getting control of your paperwork, the desk top, files, bookshelves, photo storage, crafting a personal creative space and improving the work flow of your office.",
                 p3Title: "",
                 p3: "If you need help with paperwork organizing and home document management, please contact us to a consultation.",
+                photo: "../images/cleanGreen.jpg"
+
     },
     train: {    title: "Train Housekeepers",
                 p1Title: "",
@@ -101,6 +116,8 @@ input ={
                 p2: "",
                 p3Title: "",
                 p3: "",
+                photo: "../images/cleanGreen.jpg"
+
     },
     garage: {   title: "Garage",
                 p1Title: "You plan to organize your garage on the weekend.",
@@ -109,6 +126,8 @@ input ={
                 p2: " Store and protect your car, help you find and put away your things easier and faster. Free up space, improve the efficiency of home repair/maintenance projects. Sorting through items, gifting and discarding. Developing a storage system that fits your space, storage organizing and marking containers.",
                 p3Title: "",
                 p3: "For more information, please contact us for a consultation.",
+        photo: "../images/cleanGreen.jpg"
+
     },
     kitchen: {  title: "Kitchen",
                 p1Title: "",
@@ -117,6 +136,8 @@ input ={
                 p2: "",
                 p3Title: "",
                 p3: "",
+                photo: "../images/cleanGreen.jpg"
+
     },
     //Objects for cleaning page
     special: { title: "Special Clean",
@@ -126,6 +147,7 @@ input ={
         p2: "If you're hosting people who you'd like to make a great impression on such as coworkers or in laws. In that case, San Diego Housekeeping and Organzing Solutions can be your cleaning crew to simply clean and maintain your party.",
         p3Title: "We have the perfect plan for you.",
         p3: "We can transform your party mess into the beautiful residence it was before the party. Our services include cleaning of the tables and food prep areas, garbage removal, vacuum and mop floors, wash dishes and more ",
+        photo: "../images/cleanParty.jpg"
     },
     regular: { title: "Regular ",
         p1Title: "We are perfect for your needs.",
@@ -134,6 +156,8 @@ input ={
         p2: " We offer a trusted and equipped team near you. We will clean based on your needs.",
         p3Title: "Customized cleaning",
         p3: "W work with custom checklists, where you tell us what needs to be cleaned. We will carefully detail-clean your kitchen, bathrooms, living areas, and sleeping areas.",
+        photo: "../images/cleanGreen.jpg"
+
     },
     occasional: { title: "Occasional",
         p1Title: "",
@@ -142,6 +166,7 @@ input ={
         p2: "",
         p3Title: "",
         p3: "",
+        photo: "../images/cleanGreen.jpg"
     },
     moveCle: { title: "Moving",
         p1Title: "Are you excited for your move?",
@@ -150,6 +175,7 @@ input ={
         p2: " Let us make sure that everything is sparkling clean. Cleaning includes: Dust(everything), kitchen appliances, clean cabinets, sinks and countertops. Scrub toilets, shower and bathtubs. Wipe down baseboards, vacuum and sweep all floors. ",
         p3Title: "Move Out doesn't have to be a pain.",
         p3: "Cleaning includes: Dust(everything), kitchen appliances, clean cabinets, sinks and countertops. Scrub toilets, shower and bathtubs. Wipe down baseboards, vacuum and sweep all floors.",
+        photo: "../images/cleanMoveIn.jpg"
     },
     deep: { title: "Deep Clean",
         p1Title: "The gnitty gritty.",
@@ -158,6 +184,7 @@ input ={
         p2: "Deep Cleaning includes: dusting and washing of all reachable surfaces, wiping the outside of kitchen appliances & cabinets. Basic cleaning of the bathrooms, and vacuuming and mopping of all the floors. We also tailor cleanings to what you want to get cleaned.",
         p3Title: "",
         p3: "",
+        photo: "../images/cleanDeep.jpg"        
     },
     vaca: { title: "Vacation Clean",
         p1Title: "",
@@ -166,6 +193,7 @@ input ={
         p2: "",
         p3Title: "",
         p3: "",
+        photo: "../images/cleanVaca.jpg"
     },
     green: { title: "Green Clean",
         p1Title: "",
@@ -174,18 +202,19 @@ input ={
         p2: "",
         p3Title: "",
         p3: "",
+        photo: "../images/cleanGreen.jpg"        
     },
 }
 
 
 //Repopulate Organizing services page
-function orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree) {
+function orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree,pic) {
 
     let page = `
    <section id="infoContainer">
     <div class="sidePic">
         <div class="pictureBlock">        
-            <img class="imageBlock" height="875px"src="../images/body.jpg">
+            <img class="imageBlock" height="875px"src=${pic}>
         </div>
     </div> 
     <div class="infoSec">
@@ -216,15 +245,20 @@ function orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree) {
 
 
 //Repopulate Cleaning services page
-function cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree){
+function cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree,pic){
 
     let page = `
    <section id="infoContainer">
+   
+<div class="row">
+    <div class="col-md-6 col-sm-12">    
     <div class="sidePic">
         <div class="pictureBlock">        
-            <img class="imageBlock" height="875px"src="../images/body.jpg">
+            <img class="imageBlock" height="875px"src=${pic}>
         </div>
     </div> 
+    </div>
+    <div class="col-md-6 col-sm-12">
     <div class="infoSec">
         <section class="text">
             <h1 class="textTitle"><span >${title}</span></h1>
@@ -244,6 +278,8 @@ function cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree){
 
         </section>
     </div>
+    </div>
+</div>
 </section>
         `
     $("#cleanCont").html(page);
@@ -260,12 +296,13 @@ $(".closetOrg").on("click", function () {
     var pTwo = input.closet.p2;
     var p3Tit = input.closet.p3Title;
     var pThree = input.closet.p3;
+    var pic =input.closet.photo;
     console.log(title);
     $("#orgCont").empty();
     $("#btnContainer").show();
     $(".closetOrg").hide();
     scrollTop();
-    orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
+    orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree,pic);
 });
 $(".inOutOrg").on("click", function () {
     var title = input.moveOrg.title;
@@ -275,12 +312,14 @@ $(".inOutOrg").on("click", function () {
     var pTwo = input.moveOrg.p2;
     var p3Tit = input.moveOrg.p3Title;
     var pThree = input.moveOrg.p3;
+    var pic = input.moveOrg.photo;
+
 
     $("#orgCont").empty();
     $("#btnContainer").show();
     $(".inOutOrg").hide();
     scrollTop();
-    orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
+    orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree,pic);
 });
 $(".document").on("click", function () {
     var title = input.doc.title;
@@ -290,12 +329,14 @@ $(".document").on("click", function () {
     var pTwo = input.doc.p2;
     var p3Tit = input.doc.p3Title;
     var pThree = input.doc.p3;
+    var pic = input.doc.photo;
+
 
     $("#orgCont").empty();
     $("#btnContainer").show();
     $(".document").hide();
     scrollTop();
-    orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
+    orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree,pic);
 });
 $(".train").on("click", function () {
     var title = input.train.title;
@@ -305,12 +346,14 @@ $(".train").on("click", function () {
     var pTwo = input.train.p2;
     var p3Tit = input.train.p3Title;
     var pThree = input.train.p3;
+    var pic = input.train.photo;
+
 
     $("#orgCont").empty();
     $("#btnContainer").show();
     $(".train").hide();
     scrollTop();
-    orgRepop(tititle, p1Tit, pOne, p2Tit, pTwo, p3Tit,pThreetle);
+    orgRepop(tititle, p1Tit, pOne, p2Tit, pTwo, p3Tit,pThree,pic);
 });
 $(".garage").on("click", function () {
     var title = input.garage.title;
@@ -320,12 +363,14 @@ $(".garage").on("click", function () {
     var pTwo = input.garage.p2;
     var p3Tit = input.garage.p3Title;
     var pThree = input.garage.p3;
+    var pic = input.garage.photo;
+
 
     $("#orgCont").empty();
     $("#btnContainer").show();
     $(".garage").hide();
     scrollTop();
-    orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
+    orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree,pic);
 });
 $(".kitchenOrg").on("click", function () {
     var title = input.kitchen.title;
@@ -335,12 +380,14 @@ $(".kitchenOrg").on("click", function () {
     var pTwo = input.kitchen.p2;
     var p3Tit = input.kitchen.p3Title;
     var pThree = input.kitchen.p3;
+    var pic = input.kitchen.photo;
+
 
     $("#orgCont").empty();
     $("#btnContainer").show();
     $(".kitchenOrg").hide();
     scrollTop();
-    orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
+    orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree,pic);
 });
 // Cleaning Images button clicks
 $(".specClean").on("click", function () {
@@ -351,11 +398,13 @@ $(".specClean").on("click", function () {
     var pTwo = input.special.p2;
     var p3Tit = input.special.p3Title;
     var pThree = input.special.p3;
+    var pic = input.special.photo;
+
     $("#cleanCont").empty();
     $("#btnContainer").show();
-    $(".specClean").hide();
+//    $(".specClean").hide();
     scrollTop();    
-    cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
+    cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree,pic);
 });
 $(".regClean").on("click", function () {
     var title = input.regular.title;
@@ -365,11 +414,13 @@ $(".regClean").on("click", function () {
     var pTwo = input.regular.p2;
     var p3Tit= input.regular.p3Title;
     var pThree= input.regular.p3;
+    var pic = input.regular.photo;
+
     $("#cleanCont").empty();
     $("#btnContainer").show();
-    $(".regClean").hide();
+ //   $(".regClean").hide();
     scrollTop();
-    cleanRepop(title,p1Tit,pOne,p2Tit,pTwo,p3Tit,pThree);
+    cleanRepop(title,p1Tit,pOne,p2Tit,pTwo,p3Tit,pThree,pic);
 });
 $(".occServ").on("click", function () {
     var title = input.occasional.title;
@@ -379,11 +430,13 @@ $(".occServ").on("click", function () {
     var pTwo = input.occasional.p2;
     var p3Tit = input.occasional.p3Title;
     var pThree = input.occasional.p3;
+    var pic = input.occasional.photo;
+
     $("#cleanCont").empty();
     $("#btnContainer").show();
-    $(".occServ").hide();
+ //   $(".occServ").hide();
     scrollTop();
-    cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
+    cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree,pic);
 });
 
 $(".inOutClean").on("click", function () {
@@ -394,11 +447,13 @@ $(".inOutClean").on("click", function () {
     var pTwo = input.moveCle.p2;
     var p3Tit = input.moveCle.p3Title;
     var pThree = input.moveCle.p3;
+    var pic = input.moveCle.photo;
+
     $("#cleanCont").empty();
     $("#btnContainer").show();
-    $(".inOutClean").hide();
+ //   $(".inOutClean").hide();
     scrollTop();
-    cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
+    cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree,pic);
 });
 $(".deepClean").on("click", function () {
     var title = input.deep.title;
@@ -408,11 +463,13 @@ $(".deepClean").on("click", function () {
     var pTwo = input.deep.p2;
     var p3Tit = input.deep.p3Title;
     var pThree = input.deep.p3;
+    var pic = input.deep.photo;
+
     $("#cleanCont").empty();
     $("#btnContainer").show();
-    $(".deepClean").hide();
+ //   $(".deepClean").hide();
     scrollTop();
-    cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
+    cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree,pic);
 });
 $(".vacClean").on("click", function () {
     var title = input.vaca.title;
@@ -422,11 +479,13 @@ $(".vacClean").on("click", function () {
     var pTwo = input.vaca.p2;
     var p3Tit = input.vaca.p3Title;
     var pThree = input.vaca.p3;
+    var pic = input.vaca.photo;
+
     $("#cleanCont").empty();
     $("#btnContainer").show();
-    $(".vacClean").hide();
+ //   $(".vacClean").hide();
     scrollTop();
-    cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
+    cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree,pic);
 });
 $(".greenClean").on("click", function () {
     var title = input.green.title;
@@ -436,9 +495,11 @@ $(".greenClean").on("click", function () {
     var pTwo = input.green.p2;
     var p3Tit = input.green.p3Title;
     var pThree = input.green.p3;
+    var pic = input.green.photo;
+
     $("#cleanCont").empty();
     $("#btnContainer").show();
-    $(".greenClean").hide();
+ //   $(".greenClean").hide();
     scrollTop();
-    cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree);
+    cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree,pic);
 });

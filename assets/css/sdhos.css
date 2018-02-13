@@ -62,7 +62,10 @@ p{
     font-size: 46px;
 }
 .jumbotron{
-    margin-top: 5%;
+    margin-top: 60%;
+}
+.display-3{
+    text-align: center;
 }
 
 
@@ -129,7 +132,7 @@ form{
 }
 #infoContainer{
     display:flex;
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
     clear: both;
 }
 .pictureBlock {
@@ -162,6 +165,47 @@ form{
     line-height: 0.1em;
     margin: 15% 0 20px;
     color: #3B4E4C;
+}
+.onePTitle{
+    color: #3B4E4C;
+    font-weight: 500;
+}
+.twoPTitle{
+    color: #3B4E4C;
+    font-weight: 500;
+}
+.threePTitle{
+    color: #3B4E4C;
+    font-weight: 500;
+}
+/* slideshow css */
+
+.text {
+    font-size: 50px;
+    font-style: italic;
+    color: white;
+    font-weight: 700;
+    /* position: relative; */
+    z-index: 5;
+    /* text-align: center; */
+    /* margin-left: -35px; */
+}
+.slideText{
+        font-size: 50px;
+        font-style: italic;
+        color: white;
+        font-weight: 700;
+        /* position: relative; */
+        z-index: 5;
+        text-align: center;
+        margin-left: -35px;
+
+}
+
+.slideshow-container {
+    position: absolute;
+    margin-top: -120px;
+    z-index: 1;
 }
 
 .textTitle span {
@@ -431,6 +475,19 @@ header.large {
     .frontCleanPic{
         margin-left: 4%;
     }
+    .jumbotron{
+        margin-top: 55%;
+    }
+    .slideshow-container{
+        position: absolute;
+        z-index: 15;
+    }
+    .slideText{
+        font-size: 34px;
+    }
+    .frontTitle{
+        margin-left: 25%;
+    }
 }
 @media screen and (max-width: 575px){
     .cleanPic{
@@ -451,21 +508,19 @@ header.large {
     }
     .sub{
         margin-left: 20%;
+    }   
+}
+@media screen and (max-width: 420px){
+    .slideText{
+        font-size: 22px;
+        margin-left: -15px;
     }
-   
+    .frontCleanPic{
+        margin-left: 8%;
+    }
+    .cleanPic{
+        margin-left: 15%;
+    }
 }
-/* slideshow css */
-.text{
-    font-size: 50px;
-    font-style: italic;
-    color: white;
-    font-weight: 700;
-    position: relative;
-    z-index: 5;
-}
-.slideshow-container{
-    position: relative;
-    margin-top: -130px;
-    z-index: 1;
+    
 
-}
