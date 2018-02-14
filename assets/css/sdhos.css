@@ -9,6 +9,12 @@ p{
     font-weight: 600;
     color: #A27035;
 }
+.one{
+    background-color: #626868;
+}
+.two{
+    background-color: #f5efed;
+}
 .social{
     width: 100%;
     height: 80px;
@@ -35,6 +41,7 @@ p{
 .frontCleanPic{
     border-radius: 50%;
     margin-left: 15%;
+    margin-top: 8%;
 }
 .picBtn{
     margin-bottom: 20px;   
@@ -66,6 +73,8 @@ p{
 }
 .display-3{
     text-align: center;
+    color: #533B4d;
+    font-weight: bold;
 }
 
 
@@ -254,7 +263,7 @@ h4{
     justify-content: flex-end;
 }
 .navigation {
-    background: #262626;
+    background: #01b7ae;
     opacity: .7;
 }
 .navigation, .nav-container{
@@ -297,6 +306,8 @@ nav ul {
 nav ul li {
     float: left;
     position: relative;
+    background-color: #01b7ae;
+    
 }
 
 nav ul li a,
@@ -313,7 +324,7 @@ nav ul li a:visited {
 nav ul li a:hover,
 nav ul li a:visited:hover {
     background: #2581DC;
-    color: #ffffff;
+    color: black;
 }
 
 nav ul li ul li {
@@ -334,7 +345,7 @@ nav ul li ul li a {
     position: absolute;
     top: 0;
     right: 0;
-    background: #262626;
+    background: #01b7ae;
     height: 65px;
     width: 70px;
     margin: 15px 30px 15px 15px;

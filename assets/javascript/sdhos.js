@@ -9,7 +9,7 @@ $('#nav-toggle').on('click', function () {
 //toggle nav ul
 $('#nav-toggle').click(function () {
     $('nav ul').toggle();
-    $("nav ul li a").css({"background": "black"})
+    $("nav ul li a").css({"background": "#01b7ae"})
 });
 
 //Nav animation from window scroll and resize
@@ -161,17 +161,17 @@ input ={
         p2Title: "Professional Cleaning",
         p2: " We offer a trusted and equipped team near you. We will clean based on your needs.",
         p3Title: "Customized cleaning",
-        p3: "W work with custom checklists, where you tell us what needs to be cleaned. We will carefully detail-clean your kitchen, bathrooms, living areas, and sleeping areas.",
-        photo: "../images/cleanGreen.jpg"
+        p3: "We work with custom checklists, where you tell us what needs to be cleaned. We will carefully detail-clean your kitchen, bathrooms, living areas, and sleeping areas.",
+        photo: "../images/cleanRegular.jpg"
 
     },
     occasional: { title: "Occasional",
-        p1Title: "",
-        p1: "",
+        p1Title: "Do you need a quick cleaning in an emergency or an unexpected need to get your house cleaned?",
+        p1: "San Diego Housekeeping and Organizing Solutions are perfect for your needs. With professional house cleaning experience, we offer a trusted and equipped team near you.",
         p2Title: "",
-        p2: "",
+        p2: "Based on your needs, we work with Custom checklist, where you tell us what you need to be clean.",
         p3Title: "",
-        p3: "",
+        p3: "We believe that each customer and home are different because of that our services for you will be customized to fit your needs.",
         photo: "../images/cleanGreen.jpg"
     },
     moveCle: { title: "Moving",
@@ -202,14 +202,23 @@ input ={
         photo: "../images/cleanVaca.jpg"
     },
     green: { title: "Green Clean",
-        p1Title: "",
-        p1: "",
-        p2Title: "",
-        p2: "",
-        p3Title: "",
-        p3: "",
+        p1Title: "A way to do more than simply clean your home",
+        p1: "San Diego Housekeeping and Organizing Solutions offer for our clients Green Cleaning for your Health.",
+        p2Title: "Green or eco-friendly cleaning is more than just a trend.",
+        p2: "This service is an effective cleaning to protect your family without harming the environment and improving the indoor air quality.",
+        p3Title: "How we provide a Green service?",
+        p3: "Our green Service are formulated using cosmetic-grade natural ingredients like baking soda, organic essential oils, products from biokleen and Better Life.",
         photo: "../images/cleanGreen.jpg"        
     },
+    business: { title: "Commerical Cleaning",
+        p1Title: "Are you in need of commerical cleaning services that provide you with a clean image in winning the favorable opinio of customers?",
+        p1: "Perfectly, San Diego Housekeeping and Organizing Solution cleaning services can provide it with a well trained team of professional maids that will keep your office reliably spotless.",
+        p2Title: " ",
+        p2: "We can service your facility on any schedule that works for you and we offer cleaning Services including: Entrance/Lobby, Offices/workstations, Restrooms, Lunch/Break Rooms, Hallways and Public Areas.",
+        p3Title: "",
+        p3: "We work for our customers with the most extreme cleanliness in regard to our administrations and prepare them for the best ever encounters.",
+        photo: "../images/cleanBusiness.jpg"
+    }
 }
 
 
@@ -312,7 +321,7 @@ $(".closetOrg").on("click", function () {
     console.log(title);
     $("#orgCont").empty();
     $("#btnContainer").show();
-    $(".closetOrg").hide();
+   // $(".closetOrg").hide();
     scrollTop();
     orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree,pic);
 });
@@ -329,7 +338,7 @@ $(".inOutOrg").on("click", function () {
 
     $("#orgCont").empty();
     $("#btnContainer").show();
-    $(".inOutOrg").hide();
+  //  $(".inOutOrg").hide();
     scrollTop();
     orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree,pic);
 });
@@ -346,7 +355,7 @@ $(".document").on("click", function () {
 
     $("#orgCont").empty();
     $("#btnContainer").show();
-    $(".document").hide();
+ //   $(".document").hide();
     scrollTop();
     orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree,pic);
 });
@@ -363,7 +372,7 @@ $(".train").on("click", function () {
 
     $("#orgCont").empty();
     $("#btnContainer").show();
-    $(".train").hide();
+ //   $(".train").hide();
     scrollTop();
     orgRepop(tititle, p1Tit, pOne, p2Tit, pTwo, p3Tit,pThree,pic);
 });
@@ -380,7 +389,7 @@ $(".garage").on("click", function () {
 
     $("#orgCont").empty();
     $("#btnContainer").show();
-    $(".garage").hide();
+ //   $(".garage").hide();
     scrollTop();
     orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree,pic);
 });
@@ -397,11 +406,28 @@ $(".kitchenOrg").on("click", function () {
 
     $("#orgCont").empty();
     $("#btnContainer").show();
-    $(".kitchenOrg").hide();
+ //   $(".kitchenOrg").hide();
     scrollTop();
     orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree,pic);
 });
 // Cleaning Images button clicks
+$(".businessClean").on("click", function () {
+    var title = input.business.title;
+    var p1Tit = input.business.p1Title;
+    var pOne = input.business.p1;
+    var p2Tit = input.business.p2Title;
+    var pTwo = input.business.p2;
+    var p3Tit = input.business.p3Title;
+    var pThree = input.business.p3;
+    var pic = input.business.photo;
+
+
+    $("#cleanCont").empty();
+    $("#btnContainer").show();
+  //  $(".businessClean").hide();
+    scrollTop();
+    cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree, pic);
+});
 $(".specClean").on("click", function () {
     var title = input.special.title;
     var p1Tit = input.special.p1Title;
