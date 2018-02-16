@@ -19,7 +19,7 @@ $(document).on("scroll", function () {
         $("header").removeClass("large").addClass("small");
         // $("nav").addClass("navPad");
         $(".navLink").css({"margin-top": "2px","line-height": "45px"});
-        $(".logo").css({"height": "60px"});
+        $(".logo").css({"height": "60px", "width": "50px"});
         $(".brand").css({"margin-top": "5px"});
         $(".nav-mobile").css({"margin": "0px 30px 0px 15px"});
         $(".mobileList").css({"margin": "0px 15px 0px 0px"});
@@ -51,7 +51,7 @@ var scrollTop = function(){
 }
 //slideshow javascript
 var slidesArray = document.getElementsByClassName("mySlides");
-console.log('slide len ', slidesArray.length);
+//console.log('slide len ', slidesArray.length);
 
 
 var slideIndex = 0;
@@ -60,7 +60,6 @@ if (slidesArray.length > 0) {
 } else {
     console.log("buttons should work");
 }
-//carousel();
 
 
 function carousel(){

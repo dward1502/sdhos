@@ -35,13 +35,15 @@ p{
 .cleanPic{
     border: none;
     border-radius: 50%;
-     margin-left: 5%; 
+     margin-left: 14%;
+     margin-top: 10%; 
     z-index: -1;
 }
 .frontCleanPic{
     border-radius: 50%;
     margin-left: 15%;
     margin-top: 8%;
+    z-index: 1;
 }
 .picBtn{
     margin-bottom: 20px;   
@@ -63,13 +65,18 @@ p{
 .frontPage{
     margin-top: 10%;
     margin-bottom: 10%;
+    z-index: 3;
 }
 .frontTitle{
     margin-left: 31%;
     font-size: 46px;
 }
-.jumbotron{
+.banner{
     margin-top: 60%;
+    z-index: 4;
+}
+.container{
+    z-index: 4;
 }
 .display-3{
     text-align: center;
@@ -164,7 +171,7 @@ form{
 }
 /* InfoSection  */
 .text{
-    width: 65%;
+    width: 70%;
     margin: 5% 10% 5% 10%;
 }
 .textTitle {
@@ -206,9 +213,18 @@ form{
         font-weight: 700;
         /* position: relative; */
         z-index: 5;
-        text-align: center;
+        /* text-align: center; */
         margin-left: -35px;
-
+}
+.slideTextOrg{
+    font-size: 50px;
+    font-style: italic;
+    color: white;
+    font-weight: 700;
+    /* position: relative; */
+    z-index: 5;
+    /* text-align: center; */
+    margin-left: -50px;
 }
 
 .slideshow-container {
@@ -257,7 +273,8 @@ h4{
     color: #DCDCDD;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    margin-top: 2%;
+    margin-top: 20px;
+    margin-left: 30%;
 }
 #connect{
     justify-content: flex-end;
@@ -402,6 +419,7 @@ nav ul li ul li a {
     .imageBlock{
         width: 100%;
     }
+    
 }
 
 @media screen and (min-width: 908px) {
@@ -481,12 +499,15 @@ header.large {
         margin-top: 4%;
         margin-left: 0px;
     }
+    .slideText, .slideTextOrg {
+        font-size: 35px;
+    }
 }
 @media screen and (max-width: 800px){
     .frontCleanPic{
         margin-left: 4%;
     }
-    .jumbotron{
+    .banner{
         margin-top: 55%;
     }
     .slideshow-container{
@@ -502,7 +523,7 @@ header.large {
 }
 @media screen and (max-width: 575px){
     .cleanPic{
-        margin-left: 10%;
+        margin-left: 5%;
     }
     .btnSelection{
         padding: 30px;
@@ -522,15 +543,39 @@ header.large {
     }   
 }
 @media screen and (max-width: 420px){
-    .slideText{
-        font-size: 22px;
+    nav{
+        padding: 60px 0px 15px;
+    }
+    .slideText, .slideTextOrg{
+        font-size: 20px;
         margin-left: -15px;
     }
     .frontCleanPic{
-        margin-left: 8%;
+        margin-left: 13%;
+        width: 275px;
+        height: 275px;
     }
     .cleanPic{
         margin-left: 15%;
+        margin-top: 10%;
+    }
+    .text{
+        margin: 5%;
+    }
+    .cleanPicBtm{
+        margin-left: 25%;
+    }
+    .picTitle{
+        margin-left: 15%;
+    }
+    .picTitleSm{
+        margin-left: 25%;
+    }
+    .picTitleBtm{
+        margin-left: 25%;
+    }
+    .picTitleBtmSm{
+        margin-left: 30%;
     }
 }
     
