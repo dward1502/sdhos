@@ -83,6 +83,10 @@ p{
     color: #533B4d;
     font-weight: bold;
 }
+.outline{
+    position: absolute;
+    z-index: 20;
+}
 
 
 /* Contact page css */

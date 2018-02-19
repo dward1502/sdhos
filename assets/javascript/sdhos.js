@@ -145,7 +145,7 @@ input ={
 
     },
     //Objects for cleaning page
-    special: { title: "Special Clean",
+    special: { title: "Pre/After Party Cleaning",
         p1Title: "Have you had to clean up after your special event before?",
         p1: "For those who have done this before, they know how exhausting it can be. Special events tend to produce a very special kind of mess. Dont worry just hire our cleaning company to clean up after your next party and we will take care of the mess.",
         p2Title: "Want to make a great impression?",
@@ -154,7 +154,7 @@ input ={
         p3: "We can transform your party mess into the beautiful residence it was before the party. Our services include cleaning of the tables and food prep areas, garbage removal, vacuum and mop floors, wash dishes and more ",
         photo: "../images/cleanParty.jpg"
     },
-    regular: { title: "Regular ",
+    regular: { title: "Regular Cleaning",
         p1Title: "We are perfect for your needs.",
         p1: "When you live in San Diego, you live in a vacation town. Don't waste your time at home cleaning up. Go out and enjoy life. Leave your house in good hands. We will make it sparkle.",
         p2Title: "Professional Cleaning",
@@ -164,7 +164,7 @@ input ={
         photo: "../images/cleanRegular.jpg"
 
     },
-    occasional: { title: "Occasional",
+    occasional: { title: "Occasional Cleaning",
         p1Title: "Do you need a quick cleaning in an emergency or an unexpected need to get your house cleaned?",
         p1: "San Diego Housekeeping and Organizing Solutions are perfect for your needs. With professional house cleaning experience, we offer a trusted and equipped team near you.",
         p2Title: "",
@@ -173,7 +173,7 @@ input ={
         p3: "We believe that each customer and home are different because of that our services for you will be customized to fit your needs.",
         photo: "../images/cleanGreen.jpg"
     },
-    moveCle: { title: "Moving",
+    moveCle: { title: "Move-In/Out Cleaning",
         p1Title: "Are you excited for your move?",
         p1: "Let us take care of the exhausting part of this job. We're the experts who will remove the burden of pre and post move cleaning from your to-do list. Our team is trained and equipped for that. ",
         p2Title: "Do you want a fresh start?",
