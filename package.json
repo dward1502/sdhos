@@ -1,0 +1,23 @@
+{
+  "name": "sdhos",
+  "version": "1.0.0",
+  "description": "Website for San Diego Housekeeping and Organizing Solutions. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dward1502/sdhos.git"
+  },
+  "author": "Daniel Ward",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/dward1502/sdhos/issues"
+  },
+  "homepage": "https://github.com/dward1502/sdhos#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "path": "^0.12.7"
+  }
+}
