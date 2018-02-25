@@ -91,7 +91,7 @@ input ={
                 p2:"We help you decide what to remove and what to keep, free up space, make everything visible and accessible. Making closets and storage areas functional, creating a warm welcoming space that's a sanctuary.", 
                 p3Title:"", 
                 p3:"Contact us for a consultation. We have the perfect project for you.",
-                photo: "../images/cleanGreen.jpg"
+                photo: "../images/closetOrg.jpg"
 
     },
     moveOrg: { title: "Moving",
@@ -101,7 +101,7 @@ input ={
                 p2: "Creating a personalized moving checklist and timeline, purchase packing supplies, rent a moving truck and making arrangements to connect utilities.",
                 p3Title: "Need Help?",
                 p3: "Call a professional organizer. When everything is done, go enjoy your new home and neighborhood.",
-                photo: "../images/cleanGreen.jpg"
+                photo: "../images/moveOrg.jpg"
 
     },
     doc: {      title: "Document",
@@ -111,7 +111,7 @@ input ={
                 p2: "Getting control of your paperwork, the desk top, files, bookshelves, photo storage, crafting a personal creative space and improving the work flow of your office.",
                 p3Title: "",
                 p3: "If you need help with paperwork organizing and home document management, please contact us to a consultation.",
-                photo: "../images/cleanGreen.jpg"
+                photo: "../images/documentOrg.jpg"
 
     },
     train: {    title: "Train Housekeepers",
@@ -131,7 +131,7 @@ input ={
                 p2: " Store and protect your car, help you find and put away your things easier and faster. Free up space, improve the efficiency of home repair/maintenance projects. Sorting through items, gifting and discarding. Developing a storage system that fits your space, storage organizing and marking containers.",
                 p3Title: "",
                 p3: "For more information, please contact us for a consultation.",
-        photo: "../images/cleanGreen.jpg"
+        photo: "../images/garageOrg.jpg"
 
     },
     kitchen: {  title: "Kitchen",

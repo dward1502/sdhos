@@ -93,6 +93,10 @@ p{
     z-index: 15;
     margin-top: -50%;
 }
+.polyBot{
+    margin-top:-20%;
+}
+
 
 
 /* Contact page css */
@@ -277,7 +281,7 @@ h4{
 
 }
 .page-footer{
-    margin-top: 100px;
+  margin-top: 100px;
   display: flex;  
   background-color: #3B4E4C;
   width: 100%;
@@ -292,7 +296,15 @@ h4{
     margin-left: 30%;
 }
 #connect{
-    justify-content: flex-end;
+    margin-left: 40%;
+    margin-top: 8%;
+}
+.connect{
+    margin-right: 2%;
+    cursor: pointer;
+}
+.bottomJumbo{
+    margin-bottom: 5%;
 }
 .navigation {
     background: #01b7ae;
