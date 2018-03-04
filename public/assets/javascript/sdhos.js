@@ -141,7 +141,7 @@ input ={
                 p2: "",
                 p3Title: "",
                 p3: "",
-                photo: "../images/cleanGreen.jpg"
+                photo: "../images/kitchen.jpg"
 
     },
     //Objects for cleaning page
