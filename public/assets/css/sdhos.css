@@ -94,7 +94,7 @@ p{
     margin-top: -50%;
 }
 .polyBot{
-    margin-top:-20%;
+    margin-top:-29.3%;
 }
 
 
@@ -267,6 +267,7 @@ h4{
     border-bottom: solid 3px rgb(25, 157, 144);
     margin-top: 20px;
     background-color: #DCDCDD;
+    margin-bottom: 80px;
 }
 .socialImg{
     width: 100%;
@@ -529,6 +530,9 @@ header.large {
     .slideText, .slideTextOrg {
         font-size: 35px;
     }
+    .polyBot{
+        margin-top:-19.7%;
+    }
 }
 @media screen and (max-width: 800px){
     .frontCleanPic{
@@ -603,6 +607,12 @@ header.large {
     }
     .picTitleBtmSm{
         margin-left: 30%;
+    }
+    .polyBot{
+        margin-top: -300px;
+    }
+    #connect{
+        margin-left: 30px;
     }
 }
     

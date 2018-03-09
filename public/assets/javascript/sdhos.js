@@ -131,7 +131,7 @@ input ={
                 p2: " Store and protect your car, help you find and put away your things easier and faster. Free up space, improve the efficiency of home repair/maintenance projects. Sorting through items, gifting and discarding. Developing a storage system that fits your space, storage organizing and marking containers.",
                 p3Title: "",
                 p3: "For more information, please contact us for a consultation.",
-        photo: "../images/garageOrg.jpg"
+        photo: "../images/garage.jpg"
 
     },
     kitchen: {  title: "Kitchen",
@@ -141,7 +141,7 @@ input ={
                 p2: "",
                 p3Title: "",
                 p3: "",
-                photo: "../images/kitchen.jpg"
+                photo: "../images/Kitchen.jpg"
 
     },
     //Objects for cleaning page
@@ -171,7 +171,7 @@ input ={
         p2: "Based on your needs, we work with Custom checklist, where you tell us what you need to be clean.",
         p3Title: "",
         p3: "We believe that each customer and home are different because of that our services for you will be customized to fit your needs.",
-        photo: "../images/cleanGreen.jpg"
+        photo: "../images/ocasionalcleaning.jpg"
     },
     moveCle: { title: "Move-In/Out Cleaning",
         p1Title: "Are you excited for your move?",
