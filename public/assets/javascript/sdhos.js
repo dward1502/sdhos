@@ -114,13 +114,13 @@ input ={
                 photo: "../images/documentOrg.jpg"
 
     },
-    train: {    title: "Train Housekeepers",
-                p1Title: "",
-                p1: "",
-                p2Title: "",
-                p2: "",
-                p3Title: "",
-                p3: "",
+    train: {    title: "Training",
+                p1Title: "Housekeeping Training",
+                p1: "Many times we come across a following sentence: My maid is excellent at cleaning, however, she let everything behind her and always miss placed everything in the house. If this is your casem think of the cost/benefit that proper training solves the problem! ",
+                p2Title: "Offer qualification to your maid.",
+                p2: "The training of domestic maid at home for the purpose of updating routine household knowledge and raising the degree of motivation in the scope of work in development. Each phase of the training is documented reporting the behavior of the employee, the need for changes in the domestic routine and advice for the acquisition of untensils and products. ",
+                p3Title: "What we offer",
+                p3: "Better use of time. Organization of routine and household tasks. Etiquette of behavior in the house. Organize and maintain all spaces in the house. Our goal is to exchange knowledge, not error correction. ",
                 photo: "../images/cleanGreen.jpg"
 
     },
@@ -135,13 +135,24 @@ input ={
 
     },
     kitchen: {  title: "Kitchen",
-                p1Title: "",
-                p1: "",
+                p1Title: "The center piece of the house.",
+                p1: "The kitchen is the heart of the house, it is where you prepare the meal and live the best moments with your family and friends. ",
                 p2Title: "",
-                p2: "",
+                p2: "At San Diego Housekeeping and Organizing Solutions we help you organize and learn how to dispose and maintain your kitchen.",
                 p3Title: "",
-                p3: "",
+                p3: "We help you with creation of storage based or criteria of use, optimization of existing space, consulting on facilitating materials of organization and target training the maintenance of your kitchen.",
                 photo: "../images/Kitchen.jpg"
+
+    }, 
+    kid: {
+        title: "Children Organizing",
+        p1Title: " Does the kid's bedroom look like a tornado?",
+        p1: "They don't even play with most of their toys because they can't find them? The key to minimizing the mess in kid's bedrooms and playrooms is to create a home for everything and design storage spaces that make it easy for kids to put things away. ",
+        p2Title: "Typical projects include: ",
+        p2: "Clothes, closets, shelving, storage and decor.",
+        p3Title: "",
+        p3: "For more information, please contactu us to a consultation. We have what you need.",
+        photo: "../images/cleanGreen.jpg"
 
     },
     //Objects for cleaning page
@@ -192,10 +203,10 @@ input ={
         photo: "../images/cleanDeep.jpg"        
     },
     vaca: { title: "Vacation Clean",
-        p1Title: "",
-        p1: "",
-        p2Title: "",
-        p2: "",
+        p1Title: "Our mission..",
+        p1: "You manage bookings, we make your guests comfortable and happy. We are detailed, professional and reliable. Our job is to make yours easy. Our goals is providing exceptional care for owners and guests.",
+        p2Title: "Services include",
+        p2: "Vacational rental cleaning includes: dusting and washing of all reachable surfaces, wiping the inside and outside of kitchen appliances and cabinets, special care cleaning of the bathrooms and vacumming & mopping of the floor, restock consumable supplies.",
         p3Title: "",
         p3: "",
         photo: "../images/cleanVaca.jpg"
@@ -424,6 +435,23 @@ $(".businessClean").on("click", function () {
     $("#cleanCont").empty();
     $("#btnContainer").show();
   //  $(".businessClean").hide();
+    scrollTop();
+    cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree, pic);
+});
+$(".trainClean").on("click", function () {
+    var title = input.train.title;
+    var p1Tit = input.train.p1Title;
+    var pOne = input.train.p1;
+    var p2Tit = input.train.p2Title;
+    var pTwo = input.train.p2;
+    var p3Tit = input.train.p3Title;
+    var pThree = input.train.p3;
+    var pic = input.train.photo;
+
+
+    $("#cleanCont").empty();
+    $("#btnContainer").show();
+    //  $(".businessClean").hide();
     scrollTop();
     cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree, pic);
 });
