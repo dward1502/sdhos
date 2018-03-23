@@ -5,16 +5,11 @@ p{
     margin-left: 15%;
     margin-top: 5%;
     font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-family: 'Fondamento', cursive;
     font-weight: 600;
     color: #A27035;
 }
-.one{
-    background-color: #626868;
-}
-.two{
-    background-color: #f5efed;
-}
+
 .social{
     
     z-index: 1;
@@ -23,7 +18,7 @@ p{
     height: 100px;
 }
 .btn{
-   background-color: #3B4E4C;
+   background-color : #01B7AE;
    border: none;
    color: #DCDCDD;
    font-size: 16px;
@@ -59,7 +54,7 @@ p{
 }
 .btnSelection{
     margin: 5%;
-    border: solid 4px black;
+    
     padding: 3%;
 }
 .frontPage{
@@ -70,6 +65,7 @@ p{
 .frontTitle{
     margin-left: 31%;
     font-size: 46px;
+    font-family: 'Fondamento', cursive;
 }
 .banner{
     margin-top: 60%;
@@ -82,6 +78,7 @@ p{
     text-align: center;
     color: #533B4d;
     font-weight: bold;
+    font-family: 'Norican', cursive;
 }
 .outline{
     position: absolute;
@@ -108,18 +105,22 @@ p{
     margin-top: 10%;
     margin-bottom: 8%;    
 }
+h1{
+     color: #01B7AE;
+}
 h2 {
     width: 100%;
     text-align: center;
     border-bottom: 1px solid #000;
     line-height: 0.1em;
     margin: 10px 0 20px;
-    color: #3B4E4C;
+    color: #01B7AE;
 }
+
 h2 span {
     background-color: #fff;
     padding: 0 10px;
-    color: #3B4E4C;
+    color: #01B7AE;
 }
 form{
     /* border: solid 5px grey; */
@@ -139,7 +140,7 @@ form{
     font-size: 36px;
 }
 .sub{
-    background-color: #3B4E4C;
+    background-color: #01B7AE;
     border: none;
     color: #DCDCDD;
     font-size: 16px;
@@ -194,7 +195,7 @@ form{
     border-bottom: 1px solid #000;
     line-height: 0.1em;
     margin: 15% 0 20px;
-    color: #3B4E4C;
+    color: #01B7AE;
 }
 .onePTitle{
     color: #3B4E4C;
@@ -222,8 +223,8 @@ form{
 }
 .slideText{
         font-size: 50px;
-        font-style: italic;
-        color: white;
+       font-family: 'Lobster', cursive;
+        color: #626868;
         font-weight: 700;
         /* position: relative; */
         z-index: 5;
@@ -232,8 +233,8 @@ form{
 }
 .slideTextOrg{
     font-size: 50px;
-    font-style: italic;
-    color: white;
+   font-family: 'Lobster', cursive;
+    color: #626868;
     font-weight: 700;
     /* position: relative; */
     z-index: 5;
@@ -308,7 +309,7 @@ h4{
     margin-bottom: 5%;
 }
 .navigation {
-    background: #01b7ae;
+    background: #C5C6CB;
     opacity: .7;
 }
 .navigation, .nav-container{
@@ -351,7 +352,7 @@ nav ul {
 nav ul li {
     float: left;
     position: relative;
-    background-color: #01b7ae;
+    background-color: #C5C6CB;
     
 }
 
@@ -390,7 +391,7 @@ nav ul li ul li a {
     position: absolute;
     top: 0;
     right: 0;
-    background: #01b7ae;
+    background: #C5C6CB;
     height: 65px;
     width: 70px;
     margin: 15px 30px 15px 15px;
@@ -521,6 +522,9 @@ header.large {
     #phone{
         margin-left: 35%;
     }
+    .polyBot{
+        margin-top:-31%;
+    }
 }
 @media screen and (min-width: 1200px){
     .brand{
@@ -551,6 +555,9 @@ header.large {
     .frontTitle{
         margin-left: 25%;
     }
+     .polyBot {
+         margin-top: -39%;
+     }
 }
 @media screen and (max-width: 575px){
     .cleanPic{
@@ -572,6 +579,9 @@ header.large {
     .sub{
         margin-left: 20%;
     }   
+     .polyBot {
+         margin-top: -39%;
+     }
 }
 @media screen and (max-width: 420px){
     nav{
