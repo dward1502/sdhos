@@ -41,11 +41,11 @@
         <h2><span>Contact</span></h2>
     </div>
     <div id="contactForm">
-       <form>
-           <input type="text" placeholder="Name" class="formInput" id="name" style="width: 100%"><br><br>
-           <input type="email" placeholder="Email" class="formInput" id="email" style="width: 100%"><br><br>
-           <textarea rows="6" cols="42" class="formInput" id="message" placeholder="Message" style="width: 100%"></textarea><br>
-           <button class=" sub" id="submit">Submit</button>
+       <form action="mailto:sdhosolutions@gmail.com" method="post" enctype="text/plain">
+           <input type="text" placeholder="Name" class="formInput" name="name" id="name" style="width: 100%"><br><br>
+           <input type="email" placeholder="Email" class="formInput" name="mail" id="email" style="width: 100%"><br><br>
+           <textarea rows="6" cols="42" class="formInput" name="comment" id="message" placeholder="Message" style="width: 100%"></textarea><br>
+           <button class="sub" value="Send" type="submit" id="submit">Submit</button>
        </form>
     </div>
         <a id="phone" href="tel:+1-619-381-1322">(619) 381-1322</a>

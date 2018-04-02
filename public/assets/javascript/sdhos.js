@@ -9,7 +9,7 @@ $('#nav-toggle').on('click', function () {
 //toggle nav ul
 $('#nav-toggle').click(function () {
     $('nav ul').toggle();
-    $("nav ul li a").css({"background": "#01b7ae"})
+    $("nav ul li a").css({ "background": "#C5C6CB"})
 });
 
 //Nav animation from window scroll and resize
@@ -85,7 +85,7 @@ function carousel(){
 //Object for data to be inputted into organizing and cleaning page
 input ={
     closet : {  title: "Closet" , 
-                p1Title:"Do you need more closet space for you clothes?", 
+                p1Title:"Do you need more closet space for your clothes?", 
                 p1:"You can spend precious time looking for things or you can find a place for everything.  You will always know exactly where to look. ", 
                 p2Title:"Typical projects include : ", 
                 p2:"We help you decide what to remove and what to keep, free up space, make everything visible and accessible. Making closets and storage areas functional, creating a warm welcoming space that's a sanctuary.", 
@@ -106,19 +106,19 @@ input ={
     },
     doc: {      title: "Document",
                 p1Title: "Do you feel overwhelmed by paperwork and documents?",
-                p1: "Many people who work in their homes are so busy serving their clients and customers, they can't find the extra time to review and organize their paperwork. Hiring a professional organizer will save your precious time to focus on what really matter for your job and life.",
+                p1: "Many people who work in their homes, who are so busy serving their clients and customers, cannot find the extra time to review and organize their paperwork. Hiring a professional organizer will save you precious time to focus on what really matters for your job and life.",
                 p2Title: "Typical projects include : ",
                 p2: "Getting control of your paperwork, the desk top, files, bookshelves, photo storage, crafting a personal creative space and improving the work flow of your office.",
                 p3Title: "",
-                p3: "If you need help with paperwork organizing and home document management, please contact us to a consultation.",
+                p3: "If you need help with paperwork organization and home document management, please contact us for a consultation.",
                 photo: "../images/documentOrg.jpg"
 
     },
     train: {    title: "Training",
                 p1Title: "Housekeeping Training",
-                p1: "Many times we come across a following sentence: My maid is excellent at cleaning, however, she let everything behind her and always miss placed everything in the house. If this is your casem think of the cost/benefit that proper training solves the problem! ",
-                p2Title: "Offer qualification to your maid.",
-                p2: "The training of domestic maid at home for the purpose of updating routine household knowledge and raising the degree of motivation in the scope of work in development. Each phase of the training is documented reporting the behavior of the employee, the need for changes in the domestic routine and advice for the acquisition of untensils and products. ",
+                p1: "Many times we come across the following complaint: My housekeeper is excellent at cleaning, however, she leaves everything behind her and always miss placed everything in the house. If this is your case think of the cost/benefit that proper training solves the problem! ",
+                p2Title: "Offer qualification to your housekeeper.",
+                p2: "The training of domestic maid at home for the purpose of updating routine household knowledge and raising the degree of motivation in the scope of work in development. Each phase of the training is documented reporting the behavior of the employee, the need for changes in the domestic routine and advice for the acquisition of utensils and products. ",
                 p3Title: "What we offer",
                 p3: "Better use of time. Organization of routine and household tasks. Etiquette of behavior in the house. Organize and maintain all spaces in the house. Our goal is to exchange knowledge, not error correction. ",
                 photo: "../images/cleanGreen.jpg"
@@ -126,7 +126,7 @@ input ={
     },
     garage: {   title: "Garage",
                 p1Title: "You plan to organize your garage on the weekend.",
-                p1: "On a sunny Saturday morning, you grab a cup of coffee, open the door with gusto and determined to organize by the end of the day. But you do not know where to begin. You start getting things off and realize that you should be wasting your time with moments of pleasure. A disorganized and cluttered garage not only takes up a lot of physical space but mental space too. Enjoy your life and leave the hard work with us.",
+                p1: "On a sunny Saturday morning, you grab a cup of coffee, open the door with gusto, determined to organize the mess by the end of the day. But, you do not know where to begin and then realize that you should be wasting your time with moments of pleasure. A disorganized and cluttered garage not only takes up a lot of physical space but mental space too. Enjoy your life and leave the hard work with us.",
                 p2Title: "Typical projects include : ",
                 p2: " Store and protect your car, help you find and put away your things easier and faster. Free up space, improve the efficiency of home repair/maintenance projects. Sorting through items, gifting and discarding. Developing a storage system that fits your space, storage organizing and marking containers.",
                 p3Title: "",
@@ -136,18 +136,18 @@ input ={
     },
     kitchen: {  title: "Kitchen",
                 p1Title: "The center piece of the house.",
-                p1: "The kitchen is the heart of the house, it is where you prepare the meal and live the best moments with your family and friends. ",
+                p1: "The kitchen is the heart of the house, where you prepare the meals and live the best moments with your family and friends. ",
                 p2Title: "",
-                p2: "At San Diego Housekeeping and Organizing Solutions we help you organize and learn how to dispose and maintain your kitchen.",
+                p2: "At San Diego Housekeeping and Organizing Solutions we help you organize and learn how to dispose of unnecessary items and maintain your kitchen.",
                 p3Title: "",
-                p3: "We help you with creation of storage based or criteria of use, optimization of existing space, consulting on facilitating materials of organization and target training the maintenance of your kitchen.",
+                p3: "We help you with creation of storage based on criteria of use, optimization of existing space, consulting on procurement of materials for organization and targeting the maintenance of your kitchen.",
                 photo: "../images/Kitchen.jpg"
 
     }, 
     kid: {
         title: "Children Organizing",
-        p1Title: " Does the kid's bedroom look like a tornado?",
-        p1: "They don't even play with most of their toys because they can't find them? The key to minimizing the mess in kid's bedrooms and playrooms is to create a home for everything and design storage spaces that make it easy for kids to put things away. ",
+        p1Title: " Does the kid's bedroom look like a tornado hit?",
+        p1: "Parents have been known to say, They don't even play with most of their toys because they can't find them. The key to minimizing the mess in kid's bedrooms and playrooms is to create a home for everything and design storage spaces that make it easy for kids to put things away. ",
         p2Title: "Typical projects include: ",
         p2: "Clothes, closets, shelving, storage and decor.",
         p3Title: "",
@@ -158,16 +158,16 @@ input ={
     //Objects for cleaning page
     special: { title: "Pre/After Party Cleaning",
         p1Title: "Have you had to clean up after your special event before?",
-        p1: "For those who have done this before, they know how exhausting it can be. Special events tend to produce a very special kind of mess. Dont worry just hire our cleaning company to clean up after your next party and we will take care of the mess.",
+        p1: "For those who have done this before, they know how exhausting it can be. Special events tend to produce a very special kind of mess. Dont worry, just hire our cleaning company to clean up after your next party and we will take care of the mess.",
         p2Title: "Want to make a great impression?",
-        p2: "If you're hosting people who you'd like to make a great impression on such as coworkers or in laws. In that case, San Diego Housekeeping and Organzing Solutions can be your cleaning crew to simply clean and maintain your party.",
+        p2: "If you're hosting people who you'd like to make a great impression on such as coworkers or future in-laws, San Diego Housekeeping and Organzing Solutions can be your cleaning crew to simply clean and maintain your party.",
         p3Title: "We have the perfect plan for you.",
         p3: "We can transform your party mess into the beautiful residence it was before the party. Our services include cleaning of the tables and food prep areas, garbage removal, vacuum and mop floors, wash dishes and more ",
         photo: "../images/cleanParty.jpg"
     },
     regular: { title: "Regular Cleaning",
         p1Title: "We are perfect for your needs.",
-        p1: "When you live in San Diego, you live in a vacation town. Don't waste your time at home cleaning up. Go out and enjoy life. Leave your house in good hands. We will make it sparkle.",
+        p1: "When you live in San Diego, you live in a vacation town. Don't waste your time at home cleaning up. Go out and enjoy life. Leave your house in our good hands and we will make it sparkle.",
         p2Title: "Professional Cleaning",
         p2: " We offer a trusted and equipped team near you. We will clean based on your needs.",
         p3Title: "Customized cleaning",
@@ -179,7 +179,7 @@ input ={
         p1Title: "Do you need a quick cleaning in an emergency or an unexpected need to get your house cleaned?",
         p1: "San Diego Housekeeping and Organizing Solutions are perfect for your needs. With professional house cleaning experience, we offer a trusted and equipped team near you.",
         p2Title: "",
-        p2: "Based on your needs, we work with Custom checklist, where you tell us what you need to be clean.",
+        p2: "Based on your needs, we work with custom checklist, where you tell us what you need to be clean.",
         p3Title: "",
         p3: "We believe that each customer and home are different because of that our services for you will be customized to fit your needs.",
         photo: "../images/ocasionalcleaning.jpg"
@@ -188,14 +188,14 @@ input ={
         p1Title: "Are you excited for your move?",
         p1: "Let us take care of the exhausting part of this job. We're the experts who will remove the burden of pre and post move cleaning from your to-do list. Our team is trained and equipped for that. ",
         p2Title: "Do you want a fresh start?",
-        p2: " Let us make sure that everything is sparkling clean. Cleaning includes: Dust(everything), kitchen appliances, clean cabinets, sinks and countertops. Scrub toilets, shower and bathtubs. Wipe down baseboards, vacuum and sweep all floors. ",
+        p2: " Let us make sure that everything is sparkling clean. Cleaning includes: Dust(everything), kitchen appliances, clean cabinets, sinks and countertops. Scrub and sanitize toilets, shower and bathtubs. Wipe down baseboards, vacuum and sweep all floors. ",
         p3Title: "Move Out doesn't have to be a pain.",
         p3: "Cleaning includes: Dust(everything), kitchen appliances, clean cabinets, sinks and countertops. Scrub toilets, shower and bathtubs. Wipe down baseboards, vacuum and sweep all floors.",
         photo: "../images/cleanMoveIn.jpg"
     },
     deep: { title: "Deep Clean",
         p1Title: "The gnitty gritty.",
-        p1: "The deep clean service option is a comprehensive top-to-bottom cleaning of your home. A deep clean includes all the services of a regular clean but with more attention to detailed areas. You may have forgotten to clean up over time. ",
+        p1: "The deep clean service option is a comprehensive top-to-bottom cleaning of your home. A deep clean includes all the services of a regular clean but with more attention to detailed areas you may have forgotten to clean up over time. ",
         p2Title: "We are the best choice for this job.",
         p2: "Deep Cleaning includes: dusting and washing of all reachable surfaces, wiping the outside of kitchen appliances & cabinets. Basic cleaning of the bathrooms, and vacuuming and mopping of all the floors. We also tailor cleanings to what you want to get cleaned.",
         p3Title: "",
@@ -220,13 +220,13 @@ input ={
         p3: "Our green Service are formulated using cosmetic-grade natural ingredients like baking soda, organic essential oils, products from biokleen and Better Life.",
         photo: "../images/cleanGreen.jpg"        
     },
-    business: { title: "Commerical Cleaning",
-        p1Title: "Are you in need of commerical cleaning services that provide you with a clean image in winning the favorable opinio of customers?",
-        p1: "Perfectly, San Diego Housekeeping and Organizing Solution cleaning services can provide it with a well trained team of professional maids that will keep your office reliably spotless.",
+    business: { title: "Commercial",
+        p1Title: "Are you in need of commerical cleaning services that provides you with a clean image in winning the favorable opinion of customers?",
+        p1: " San Diego Housekeeping and Organizing Solution cleaning services provides a well trained team of professional custodians that will keep your office reliably spotless.",
         p2Title: " ",
         p2: "We can service your facility on any schedule that works for you and we offer cleaning Services including: Entrance/Lobby, Offices/workstations, Restrooms, Lunch/Break Rooms, Hallways and Public Areas.",
         p3Title: "",
-        p3: "We work for our customers with the most extreme cleanliness in regard to our administrations and prepare them for the best ever encounters.",
+        p3: "",
         photo: "../images/cleanBusiness.jpg"
     }
 }
@@ -334,6 +334,22 @@ $(".closetOrg").on("click", function () {
    // $(".closetOrg").hide();
     scrollTop();
     orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree,pic);
+});
+$(".kid").on("click", function () {
+    var title = input.kid.title;
+    var p1Tit = input.kid.p1Title;
+    var pOne = input.kid.p1;
+    var p2Tit = input.kid.p2Title;
+    var pTwo = input.kid.p2;
+    var p3Tit = input.kid.p3Title;
+    var pThree = input.kid.p3;
+    var pic = input.kid.photo;
+    console.log(title);
+    $("#orgCont").empty();
+    $("#btnContainer").show();
+    // $(".closetOrg").hide();
+    scrollTop();
+    orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree, pic);
 });
 $(".inOutOrg").on("click", function () {
     var title = input.moveOrg.title;

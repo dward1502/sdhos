@@ -330,7 +330,7 @@ h4{
 
 .brand a,
 .brand a:visited {
-    color: #ffffff;
+    color: #080808;
     text-decoration: none;
 }
 
@@ -363,13 +363,13 @@ nav ul li a:visited {
     padding: 0 20px;
     line-height: 70px;
     background: transparent;
-    color: #ffffff;
+    color: #0a0a0a;
     text-decoration: none;
 }
 
 nav ul li a:hover,
 nav ul li a:visited:hover {
-    background: #2581DC;
+    background: #C5C6CB;
     color: black;
 }
 
