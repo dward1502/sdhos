@@ -1,3 +1,9 @@
+/* font-family: 'Shrikhand', cursive;
+font-family: 'Passion One', cursive;
+font-family: 'Alfa Slab One', cursive; */
+
+
+
 html, body{
     height: 100%;
 }
@@ -78,7 +84,8 @@ p{
     text-align: center;
     color: #533B4d;
     font-weight: bold;
-    font-family: 'Norican', cursive;
+ font-family: 'Shrikhand',
+ cursive;
 }
 .outline{
     position: absolute;
@@ -246,6 +253,7 @@ form{
     position: absolute;
     margin-top: -120px;
     z-index: 1;
+
 }
 
 .textTitle span {
