@@ -175,14 +175,14 @@ input ={
         photo: "../images/cleanRegular.jpg"
 
     },
-    occasional: { title: "Occasional Cleaning",
-        p1Title: "Do you need a quick cleaning in an emergency or an unexpected need to get your house cleaned?",
-        p1: "San Diego Housekeeping and Organizing Solutions are perfect for your needs. With professional house cleaning experience, we offer a trusted and equipped team near you.",
+    occasional: { title: "Pressure Washing",
+        p1Title: "Pressure Washing Services",
+        p1: "Your deck and backyard is an outdoor extension of your home. It is a pleasant place for entertaining guests and relaxing time. Keep these places as nice as the inside of your home and just as comfortable. ",
         p2Title: "",
-        p2: "Based on your needs, we work with custom checklist, where you tell us what you need to be clean.",
-        p3Title: "",
-        p3: "We believe that each customer and home are different because of that our services for you will be customized to fit your needs.",
-        photo: "../images/ocasionalcleaning.jpg"
+        p2: "Ourpressure washers are professionally trained and happy to take care of all your pressure washing needs. We are specialized in walkways, driveways, decks and backyards.",
+        p3Title: "Pressure Washing Includes:",
+        p3: "Removing mold, bubble gum, mildew, dirt and discoloration, spider webs and eggs, mud and other dirt stains. For more information, please contact us for a consultation.",
+        photo: "../images/pressure.jpg"
     },
     moveCle: { title: "Move-In/Out Cleaning",
         p1Title: "Are you excited for your move?",
