@@ -8,7 +8,7 @@ html, body{
     height: 100%;
 }
 p{
-    margin-left: 15%;
+    /* margin-left: 10%; */
     margin-top: 5%;
     font-size: 20px;
    font-family: 'Fondamento', cursive;
@@ -24,7 +24,7 @@ p{
     height: 100px;
 }
 .btn{
-   background-color : #01B7AE;
+   background-color: #533B4d;
    border: none;
    color: #DCDCDD;
    font-size: 16px;
@@ -32,6 +32,7 @@ p{
    margin-top: 10%;
    width: 200px;
    height: 55px;
+   cursor: pointer;
 }
 .cleanPic{
     border: none;
@@ -42,21 +43,32 @@ p{
 }
 .frontCleanPic{
     border-radius: 50%;
-    margin-left: 15%;
+    margin-left: 22%;
     margin-top: 8%;
     z-index: 1;
 }
 .picBtn{
     margin-bottom: 20px;   
+    cursor: pointer;
 }
 .picTitle{
     margin-left: 30%;
+    margin-right: 25%;
+    text-align: center;
 }
 .picTitleLon{
-    margin-left: 20%;
+    margin-left: 15%;
+    margin-right: 12%;
+    text-align: center;
 }
 .picTitleOrg{
-    margin-left: 32%;
+    margin-left: 10%;
+    margin-right: 17%;
+    text-align: center;
+}
+.picTitleSm{
+    margin-left: 2%;
+    margin-right: 20%;
 }
 .btnSelection{
     margin: 5%;
@@ -69,12 +81,14 @@ p{
     z-index: 3;
 }
 .frontTitle{
-    margin-left: 31%;
+    margin-left: 20%;
+    margin-right: 20%;
     font-size: 46px;
     font-family: 'Fondamento', cursive;
+    text-align: center;
 }
 .banner{
-    margin-top: 60%;
+    margin-top: 70%;
     z-index: 4;
 }
 .container{
@@ -84,9 +98,9 @@ p{
     text-align: center;
     color: #533B4d;
     font-weight: bold;
- font-family: 'Shrikhand',
- cursive;
+    font-family: 'Courgette', cursive;
 }
+
 .outline{
     position: absolute;
     z-index: 20;
@@ -101,8 +115,6 @@ p{
     margin-top:-29.3%;
 }
 
-
-
 /* Contact page css */
 .contactPage{
     margin-top: 10%;
@@ -113,7 +125,7 @@ p{
     margin-bottom: 8%;    
 }
 h1{
-     color: #01B7AE;
+     color: rgb(4, 135, 129);
 }
 h2 {
     width: 100%;
@@ -147,7 +159,7 @@ form{
     font-size: 36px;
 }
 .sub{
-    background-color: #01B7AE;
+    background-color: #533B4d;
     border: none;
     color: #DCDCDD;
     font-size: 16px;
@@ -155,7 +167,7 @@ form{
     width: 200px;
     height: 50px;
     margin: 5% 0% 5% 35%;
-    
+    cursor: pointer;    
 }
 
 /*Organizing/Cleaning page CSS*/
@@ -197,12 +209,7 @@ form{
     margin: 5% 10% 5% 10%;
 }
 .textTitle {
-    width: 100%;
-    text-align: left;
-    border-bottom: 1px solid #000;
-    line-height: 0.1em;
-    margin: 15% 0 20px;
-    color: #01B7AE;
+    color: #3B4E4C !important;
 }
 .onePTitle{
     color: #3B4E4C;
@@ -328,9 +335,9 @@ h4{
 }
 
 .brand {
-    margin-top: 5%;
+    /* margin-top: 3%; */
     position: absolute;
-    padding-left: 20px;
+    padding-left: 5px;
     float: left;
     z-index: 100;
     /* line-height: 70px; */
@@ -470,6 +477,7 @@ nav ul li ul li a {
     top: 22px;
     cursor: pointer;
     padding: 10px 35px 16px 0px;
+    color: #626868;
 }
 #nav-toggle span,
 #nav-toggle span:before,
@@ -478,10 +486,11 @@ nav ul li ul li a {
     border-radius: 1px;
     height: 5px;
     width: 35px;
-    background: #ffffff;
+    background: #626868;
     position: absolute;
     display: block;
     content: '';
+    color: #626868;
     transition: all 300ms ease-in-out;
 }
 
@@ -533,6 +542,18 @@ header.large {
     .polyBot{
         margin-top:-31%;
     }
+    .picTitleSm{
+        margin-left: 30%;
+    }
+    .picTitle{
+        margin-left: 18%;
+    }
+    .picTitleOrg{
+        margin-left: 12%;
+    }
+    p{
+        margin-left: 20%;
+    }
 }
 @media screen and (min-width: 1200px){
     .brand{
@@ -551,7 +572,7 @@ header.large {
         margin-left: 4%;
     }
     .banner{
-        margin-top: 55%;
+        margin-top: 70%;
     }
     .slideshow-container{
         position: absolute;
@@ -631,6 +652,11 @@ header.large {
     }
     #connect{
         margin-left: 30px;
+        margin-top: 18%;
+    }
+    .copyright{
+        margin-left: 0;
+        text-align: center;
     }
 }
     

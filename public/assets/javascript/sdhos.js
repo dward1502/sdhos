@@ -19,8 +19,8 @@ $(document).on("scroll", function () {
         $("header").removeClass("large").addClass("small");
         // $("nav").addClass("navPad");
         $(".navLink").css({"margin-top": "2px","line-height": "45px"});
-        $(".logo").css({"height": "90px", "width": "200px"});
-        $(".brand").css({"margin-top": "5px"});
+        $(".logo").css({"height": "100px", "width": "200px"});
+        $(".brand").css({"margin-top": "10px"});
         $(".nav-mobile").css({"margin": "0px 30px 0px 15px"});
         $(".mobileList").css({"margin": "0px 15px 0px 0px"});
         // $("nav").css({"padding": "65px 0px 15px"});
@@ -30,7 +30,7 @@ $(document).on("scroll", function () {
         // $("nav").removeClass("navPad")
         $(".navLink").css({"margin": "15px","line-height": "90px"});
         $(".logo").css({"height": "120px"});
-        $(".brand").css({"margin-top": "30px"});
+        $(".brand").css({"margin-top": "25px"});
         $(".nav-mobile").css({"margin": "15px 30px 15px 15px"});
         $(".mobileList").css({"margin": "0px 15px 0px 0px"});
         // $("nav").css({"padding": "120px 0px 15px"});
@@ -121,7 +121,7 @@ input ={
                 p2: "The training of domestic maid at home for the purpose of updating routine household knowledge and raising the degree of motivation in the scope of work in development. Each phase of the training is documented reporting the behavior of the employee, the need for changes in the domestic routine and advice for the acquisition of utensils and products. ",
                 p3Title: "What we offer",
                 p3: "Better use of time. Organization of routine and household tasks. Etiquette of behavior in the house. Organize and maintain all spaces in the house. Our goal is to exchange knowledge, not error correction. ",
-                photo: "../images/cleanGreen.jpg"
+                photo: "../images/train.jpg"
 
     },
     garage: {   title: "Garage",
@@ -156,7 +156,7 @@ input ={
 
     },
     //Objects for cleaning page
-    special: { title: "Pre/After Party Cleaning",
+    special: { title: "Events Cleaning",
         p1Title: "Have you had to clean up after your special event before?",
         p1: "For those who have done this before, they know how exhausting it can be. Special events tend to produce a very special kind of mess. Dont worry, just hire our cleaning company to clean up after your next party and we will take care of the mess.",
         p2Title: "Want to make a great impression?",
@@ -248,7 +248,7 @@ function orgRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree,pic) {
     <div class="col-md-6 col-sm-12 order-1-md-6">
     <div class="infoSec">
         <section class="text">
-            <h1 class="textTitle"><span >${title}</span></h1>
+            <h1 class="textTitle">${title}</h1>
             <div class="oneSec">
                 <h4 class="onePTitle">${p1Tit} </h2>
                     <p class="onePara">${pOne}</p>
@@ -292,7 +292,7 @@ function cleanRepop(title, p1Tit, pOne, p2Tit, pTwo, p3Tit, pThree,pic){
     <div class="col-md-6 col-sm-12 order-1-md-6">
     <div class="infoSec">
         <section class="text">
-            <h1 class="textTitle"><span >${title}</span></h1>
+            <h1 class="textTitle">${title}</h1>
             <div class="oneSec">
                 <h4 class="onePTitle">${p1Tit} </h2>
                     <p class="onePara">${pOne}</p>
