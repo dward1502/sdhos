@@ -43,7 +43,7 @@ p{
 }
 .frontCleanPic{
     border-radius: 50%;
-    margin-left: 22%;
+    /* margin-left: 22%; */
     margin-top: 8%;
     z-index: 1;
 }
@@ -70,6 +70,12 @@ p{
     margin-left: 2%;
     margin-right: 20%;
 }
+.pgBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .btnSelection{
     margin: 5%;
     
@@ -81,11 +87,11 @@ p{
     z-index: 3;
 }
 .frontTitle{
-    margin-left: 20%;
-    margin-right: 40%;
+    /* margin-left: 20%;
+    margin-right: 40%; */
     font-size: 46px;
     font-family: 'Fondamento', cursive;
-    text-align: center;
+    /* text-align: center; */
 }
 .banner{
     margin-top: 70%;
@@ -325,7 +331,11 @@ h4{
 .bottomJumbo{
     margin-bottom: 5%;
 }
-
+.bottomPic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .navigation {
     background: #C5C6CB;
@@ -386,6 +396,7 @@ nav ul li a:visited {
     background: transparent;
     color: #0a0a0a;
     text-decoration: none;
+    font-weight: 800;
 }
 
 nav ul li a:hover,
@@ -401,7 +412,7 @@ nav ul li ul li {
 nav ul li ul li a {
     padding: 15px;
     line-height: 20px;
-    opacity: .7;
+    /* opacity: .7; */
 }
 
 
@@ -567,9 +578,9 @@ header.large {
     .picTitleOrg{
         margin-left: 12%;
     }
-    p{
+    /* p{
         margin-left: 20%;
-    }
+    } */
 }
 @media screen and (min-width: 1200px){
     .brand{
@@ -585,7 +596,7 @@ header.large {
 }
 @media screen and (max-width: 800px){
     .frontCleanPic{
-        margin-left: 4%;
+        /* margin-left: 4%; */
     }
     .banner{
         margin-top: 70%;
@@ -598,7 +609,7 @@ header.large {
         font-size: 34px;
     }
     .frontTitle{
-        margin-left: 25%;
+        /* margin-left: 25%; */
     }
      .polyBot {
          margin-top: -39%;
@@ -628,6 +639,9 @@ header.large {
      .polyBot {
          margin-top: -39%;
      }
+     .nav-list {
+         margin-top: 2rem;
+     }
 }
 @media screen and (max-width: 420px){
     nav{
@@ -638,7 +652,7 @@ header.large {
         margin-left: -15px;
     }
     .frontCleanPic{
-        margin-left: 13%;
+        /* margin-left: 13%; */
         width: 275px;
         height: 275px;
     }

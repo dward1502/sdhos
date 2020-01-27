@@ -43,12 +43,12 @@ $('#nav-toggle').click(function () {
 //     }
 // }
 //scroll to top function on button click
-// var scrollTop = function(){
-//     $(function () {
-//       //  $('html').scrollTop(0);
-//       $('html,body').animate({ scrollTop: 0 }, 'slow');
-//     });
-// }
+var scrollTop = function(){
+    $(function () {
+      //  $('html').scrollTop(0);
+      $('html,body').animate({ scrollTop: 0 }, 'slow');
+    });
+}
 //slideshow javascript
 var slidesArray = document.getElementsByClassName("mySlides");
 //console.log('slide len ', slidesArray.length);
