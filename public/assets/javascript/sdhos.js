@@ -13,42 +13,42 @@ $('#nav-toggle').click(function () {
 });
 
 //Nav animation from window scroll and resize
-$(document).on("scroll", function () {
+// $(document).on("scroll", function () {
 
-    if ($(document).scrollTop() >= 75) {
-        $("header").removeClass("large").addClass("small");
-        // $("nav").addClass("navPad");
-        $(".navLink").css({"margin-top": "2px","line-height": "45px"});
-        $(".logo").css({"height": "100px", "width": "200px"});
-        $(".brand").css({"margin-top": "10px"});
-        $(".nav-mobile").css({"margin": "0px 30px 0px 15px"});
-        $(".mobileList").css({"margin": "0px 15px 0px 0px"});
-        // $("nav").css({"padding": "65px 0px 15px"});
+//     if ($(document).scrollTop() >= 75) {
+//         $("header").removeClass("large").addClass("small");
+//         // $("nav").addClass("navPad");
+//         $(".navLink").css({"margin-top": "2px","line-height": "45px"});
+//         $(".logo").css({"height": "100px", "width": "200px"});
+//         $(".brand").css({"margin-top": "10px"});
+//         $(".nav-mobile").css({"margin": "0px 30px 0px 15px"});
+//         $(".mobileList").css({"margin": "0px 15px 0px 0px"});
+//         // $("nav").css({"padding": "65px 0px 15px"});
         
-    } else {
-        $("header").removeClass("small").addClass("large");
-        // $("nav").removeClass("navPad")
-        $(".navLink").css({"margin": "15px","line-height": "90px"});
-        $(".logo").css({"height": "120px"});
-        $(".brand").css({"margin-top": "25px"});
-        $(".nav-mobile").css({"margin": "15px 30px 15px 15px"});
-        $(".mobileList").css({"margin": "0px 15px 0px 0px"});
-        // $("nav").css({"padding": "120px 0px 15px"});
-    }
+//     } else {
+//         $("header").removeClass("small").addClass("large");
+//         // $("nav").removeClass("navPad")
+//         $(".navLink").css({"margin": "15px","line-height": "90px"});
+//         $(".logo").css({"height": "120px"});
+//         $(".brand").css({"margin-top": "25px"});
+//         $(".nav-mobile").css({"margin": "15px 30px 15px 15px"});
+//         $(".mobileList").css({"margin": "0px 15px 0px 0px"});
+//         // $("nav").css({"padding": "120px 0px 15px"});
+//     }
 
-});
+// });
 // function navResize(){
 //     if($(document).width() < 900){
 
 //     }
 // }
 //scroll to top function on button click
-var scrollTop = function(){
-    $(function () {
-      //  $('html').scrollTop(0);
-      $('html,body').animate({ scrollTop: 0 }, 'slow');
-    });
-}
+// var scrollTop = function(){
+//     $(function () {
+//       //  $('html').scrollTop(0);
+//       $('html,body').animate({ scrollTop: 0 }, 'slow');
+//     });
+// }
 //slideshow javascript
 var slidesArray = document.getElementsByClassName("mySlides");
 //console.log('slide len ', slidesArray.length);
@@ -63,10 +63,10 @@ if (slidesArray.length > 0) {
 
 
 function carousel(){
-    console.log('car called ');
+    // console.log('car called ');
     var i;
     var x = document.getElementsByClassName("mySlides");
-    console.log("slide len ", x.length);
+    // console.log("slide len ", x.length);
     for(i=0; i<x.length; i++){
         x[i].style.display = "none";
     }
